@@ -1,0 +1,20 @@
+.product_container {
+  margin-top: 90px;
+  height: 450px;
+  &_imagenContainer {
+    &_img {
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    margin-top: 10px;
+    &_title {
+        height: 60px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    &_description{
+        margin-top: 30px;
+    }
+  }
+}

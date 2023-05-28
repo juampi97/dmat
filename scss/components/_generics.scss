@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .linea-sep{
+    &-azul{
+      height: 3px;
+      background-color: #1263ad;
+    }
+    &-negra{
+      height: 3px;
+      background-color: #373535;
+    }
+  }
+  
+  .fixedFlecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    &_img {
+      width: 50px;
+    }
+  }
+  
+  
+  
