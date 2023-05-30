@@ -9776,6 +9776,9 @@ a {
 .product_container {
   margin-top: 90px;
   height: 450px; }
+  @media (max-width: 992px) {
+    .product_container {
+      margin-top: 220px; } }
   .product_container_imagenContainer_img {
     width: 250px; }
   .product_container_infoContainer {
