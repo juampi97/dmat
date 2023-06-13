@@ -9776,7 +9776,7 @@ a {
 .main-empresa {
   width: 100vw;
   height: 60vh;
-  background: linear-gradient(rgba(53, 53, 53, 0.55), rgba(53, 53, 53, 0.55)), url(../img/empresa/empresa.PNG);
+  background: linear-gradient(rgba(53, 53, 53, 0.55), rgba(53, 53, 53, 0.55)), url(../img/empresa/empresa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
