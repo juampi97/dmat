@@ -1,0 +1,49 @@
+.main-empresa {
+    width: 100vw;
+    height: 60vh;
+    background: linear-gradient(rgba(53, 53, 53, 0.55), rgba(53, 53, 53, 0.55)),
+      url(../img/empresa/empresa.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    & h1 {
+      font-size: 20px;
+      @media (min-width: 992px) {
+        font-size: 40px;
+      }
+    }
+  }
+  
+  .empresa_mision {
+    &_bkg_img {
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &_text {
+      height: 500px;
+    }
+    @media (min-width: 993px) and (max-width: 1306px) {
+      &_bkg_img {
+        height: 620px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+      }
+      &_text {
+        height: 620px;
+      } 
+    }
+    @media (max-width: 992px) {
+      &_bkg_img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+      }
+      &_text {
+        height: 620px;
+      } 
+    }
+  }
