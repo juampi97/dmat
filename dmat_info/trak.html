@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/template3.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>:: DAMAT :: Abrazaderas</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable --> 
+<style type="text/css">
+<!--
+@import url("clock.css");
+@import url("estilos.css");
+-->
+</style>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+/*set CSS for SPAN tag surrounding each image*/
+.seqslidestyle{
+margin-right: 0px;
+}
+</style>
+</head>
+
+<body background="imagenes/bg_home.gif" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top"><table width="700" height="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td valign="top"><table width="700" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+                  <td height="80"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td width="33%"><a href="index.html"><img src="imagenes/logo_dmat.gif" width="240" height="80" border="0"></a></td>
+                        <td width="15%"><img src="imagenes/2.gif" width="106" height="80"></td>
+                        <td width="4%"><img src="imagenes/top_sp.gif" width="110" height="80"></td>
+                        <td width="48%" background="imagenes/3.gif">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td><script type="text/javascript">
+
+/***********************************************
+* MultiFrame Image Slideshow script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var seqslides=new Array()
+//Set Path to Image plus optional URL ("" for no URL):
+seqslides[0]=["imagenes/animation_2/1.gif", ""]
+seqslides[1]=["imagenes/animation_2/2.gif", ""]
+seqslides[2]=["imagenes/animation_2/3.gif", ""]
+seqslides[3]=["imagenes/animation_2/4.gif", ""]
+seqslides[4]=["imagenes/animation_2/2.gif", ""]
+
+//Set pause between each image display (2000=2 second):
+var slidedelay=2000
+
+//Set how many images to show at once (must be less than total # of images above):
+var slidestoreveal=4
+
+//Specify code to insert between each slide (ie: "<br>" to insert a line break and create a vertical layout)
+//"" for none (or horizontal):
+var slideseparater=""
+
+//Set optional link target to be added to all images with a link:
+var optlinktarget="secwindow"
+
+//Set image border width:
+var imgborderwidth=0
+
+//Set opacity value of each image when it's "dimmed", and when it's not, respectively (1=100% opaque/normal).
+//Change 0.2 to 0 to completely hide image when it's dimmed:
+var opacityvalues=[0.2,1]
+
+///No need to edit beyond here///////////
+
+function processimgcode(theimg){
+var imghtml=""
+if (theimg[1]!="")
+imghtml='<a href="'+theimg[1]+'" target="'+optlinktarget+'">'
+imghtml+='<img src="'+theimg[0]+'" border="'+imgborderwidth+'" style="filter:alpha(opacity='+(opacityvalues[0]*100)+');-moz-opacity:'+opacityvalues[0]+'">'
+if (theimg[1]!="")
+imghtml+='</a>'
+return imghtml
+}
+
+var curslide=1 //var to track current slide (total: slidestoreveal)
+var curimgindex=0 //var to track current image (total: seqslides.length)
+var isfirstcycle=1 //boolean to indicate whether this is the first cycle
+
+if (document.getElementById){
+for (i=0;i<slidestoreveal;i++)
+document.write('<span id="seqslide'+i+'" class="seqslidestyle">'+processimgcode(seqslides[i])+'</span>'+slideseparater)
+curimgindex=slidestoreveal
+illuminateslide(0,opacityvalues[1])
+}
+
+function illuminateslide(slideindex, amt){
+var slideobj=document.getElementById("seqslide"+slideindex).getElementsByTagName("IMG")[0]
+if (slideobj.filters)
+slideobj.filters.alpha.opacity=amt*100
+else if (slideobj.style.MozOpacity)
+slideobj.style.MozOpacity=amt
+}
+
+function displayit(){
+if (curslide<slidestoreveal){
+if (!isfirstcycle)
+changeimage(curslide)
+illuminateslide(curslide, opacityvalues[1])
+curslide++
+}
+else{
+isfirstcycle=0
+for (i=0;i<slidestoreveal;i++)
+illuminateslide(i, opacityvalues[0])
+changeimage(0)
+illuminateslide(0, opacityvalues[1])
+curslide=1
+}
+}
+
+function changeimage(slideindex){
+document.getElementById("seqslide"+slideindex).innerHTML=processimgcode(seqslides[curimgindex])
+curimgindex++
+if (curimgindex>=seqslides.length)
+curimgindex=0
+}
+
+if (document.getElementById)
+setInterval("displayit()",slidedelay)
+
+
+</script></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="21" valign="top"><table width="700" height="21" border="0" cellpadding="0" cellspacing="0" background="imagenes/fondo_menu.jpg">
+          <tr>  
+                        <td height="21"><script type='text/javascript'>
+function Go(){return}</script><script type='text/javascript' src='exmplmenu_var.js'></script><script type='text/javascript' src='menu_com.js'></script></td>
+                    </tr>
+                    </table></td>
+              </tr>
+              </table>
+              <table width="700" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tr> 
+                  <td width="130" valign="top" bgcolor="#1263AD"><table width="130" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td height="20" align="center" valign="bottom" class="clock"> 
+                          <script language="javascript" class="clock">
+<!--
+
+var months=new Array(13);
+months[1]="Enero";
+months[2]="Febrero";
+months[3]="Marzo";
+months[4]="Abril";
+months[5]="Mayo";
+months[6]="Junio";
+months[7]="Julio";
+months[8]="Agosto";
+months[9]="Septiembre";
+months[10]="Octubre";
+months[11]="Noviembre";
+months[12]="Deciembre";
+var time=new Date();
+var lmonth=months[time.getMonth() + 1];
+var date=time.getDate();
+var year=time.getYear();
+if (year < 2000)    
+year = year + 1900;
+document.write(lmonth + "  " + date + ", " + year);
+
+//-->
+</script> </td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  <td width="570" valign="top"> <table width="540" border="0" align="right" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                      <tr> 
+                        <td height="60"><!-- InstanceBeginEditable name="EditRegion3" --><span class="titles">Abrazaderas - power trak</span><!-- InstanceEndEditable --></td>
+                    </tr>
+                      <tr> 
+                        <td valign="top"><!-- InstanceBeginEditable name="contenido" --><center>
+                            <table border="1" style="border-collapse: collapse" bordercolor="#111111" width="500">
+                              <tr>
+      <td height="20" colspan="2" bordercolor="#FFFFFF" bgcolor="#1263AD"><p align="center" class="producttitles">ABRAZADERAS 
+          POWER TRAK</td>
+    </tr>
+    <tr>
+                                <td width="200" height="202" align="right" bordercolor="#000000" style="border-left-style: solid; border-left-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"> 
+                                  <div align="center"><img border="0" src="imagenes/power.jpg" alt="Banda Estampada" width="150" height="170"></div></td>
+                                <td width="300" height="202" align="left" bordercolor="#000000" style="border-right-style: solid; border-right-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1"> 
+                                 <br> <ul>
+          <li class="textotablas">AISI 304 Hasta di&aacute;metro 17 mm</li>
+          <li class="textotablas">AISI 430 desde di&aacute;metro 24 a 142</li>
+          <li class="textotablas">Abrazaderas para alta presion</li>
+                                    <li class="textotablas">Consulte Otras Medidas</li>
+        </ul>
+                                  <p align="center"><a href="pinzas_trak.html"><img src="imagenes/pinza_trak1_sm.jpg" alt="Pinzas Power Trak" width="239" height="143" border="0"></a>       
+                                  <p align="center"><span class="textotablas"><a href="pinzas_trak.html">VER PINZA PARA COLOCACION</a></span><br>
+                                    <br></p>
+                              </td>
+    </tr>
+  </table>
+                          <br>
+                            <table width="500" border="0" cellspacing="0" cellpadding="0">
+                              <tr> 
+                                <td height="50" align="center" valign="middle" class="titus">Consulte 
+                                  por otras medidas</td>
+                              </tr>
+                            </table>
+                            <br>
+  <table width="332" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td valign="top"> <div align="center"> </div>
+        <div align="center"> 
+          <table width="117" border="1" bordercolor="#111111" class="textotablas" style="border-collapse: collapse">
+            <tr>
+              <td width="115" height="20" align="center" bordercolor="#000000" bgcolor="#999999"><strong>MEDIDAS</strong></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">9.4 &ndash; 11.3 mm</div></td>
+            </tr>
+            <tr class="textotablas"> 
+              <td height="20" bordercolor="#000000"><div align="center">11.4 &#8211; 
+                  13.3 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">12.6 &#8211; 
+                  14.5 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">12.9 &#8211; 
+                  14.8 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">13.8 &#8211; 
+                  15.7 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">15.1 &#8211; 
+                  17 mm</div></td>
+            </tr>
+            <tr>
+              <td height="20" bordercolor="#000000"><div align="center">17 - 19.8 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">21.4 &#8211; 
+                  24 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">22.5 &#8211; 
+                  26 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">24.5 &#8211; 
+                  28 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">26.5 &#8211; 
+                  30 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">26.7 &#8211; 
+                  31.5 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">28.5 &#8211; 
+                  32.8 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">33 &#8211; 
+                  36.5 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">37.5 &#8211; 
+                  41 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">42.5 &#8211; 
+                  46 mm </div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">45.4 &#8211; 
+                  51.4 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">50 &#8211; 
+                  56 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">61 &#8211; 
+                  67 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">67.5 &#8211; 
+                  71 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">75 &#8211; 
+                  78.5 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">79.5 &#8211; 
+                  83 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">82.8 &#8211; 
+                  86 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">83.5 &#8211; 
+                  87.5 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">89 &#8211; 
+                  92.5 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">94 &#8211; 
+                  100 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">104 &#8211; 
+                  110 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">111.5 
+                  &#8211; 115 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">121.4 
+                  &#8211; 125 mm</div></td>
+            </tr>
+            <tr> 
+              <td height="20" bordercolor="#000000"><div align="center">138 &#8211; 
+                  142 mm</div></td>
+            </tr>
+          </table>
+        </div></td>
+    </tr>
+  </table>
+  <br>
+  <p><br>
+  </p>
+</center><!-- InstanceEndEditable --></td>
+                    </tr>
+                    </table></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td height="25" valign="middle" bgcolor="#1263AD" class="sm"><div align="right">Copyright 
+                &copy; DAMAT 2005-2014 - Todos los derechos reservados.&nbsp;&nbsp;</div></td>
+          </tr>
+          <tr> 
+            <td height="20" valign="middle" class="sm"><div align="center" class="bluetitus"><font color="#006699"><a href="index.html">La 
+                Empresa</a> | <a href="banda_inox.html">Productos</a> | <a href="novedades.html">Novedades</a> 
+            | <a href="contacto.html">Cont&aacute;ctenos</a> </font></div></td>
+          </tr>
+          <tr>
+            <td height="25" valign="middle" class="sm"><table width="700" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="380">&nbsp;</td>
+                  <td width="320"><div align="right"><a href="http://www.hallett.com.ar" target="_blank"><img src="imagenes/hallett.gif" alt="Hallett - Design Studio" width="111" height="38" border="0"></a></div></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+  </tr>
+</table>
+<script type="text/javascript">
+
+/* <![CDATA[ */
+
+var google_conversion_id = 990549945;
+
+var google_custom_params = window.google_tag_params;
+
+var google_remarketing_only = true;
+
+/* ]]> */
+
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+
+</script>
+
+<noscript>
+
+<div style="display:inline;">
+
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/990549945/?value=0&amp;guid=ON&amp;script=0"/>
+
+</div>
+
+</noscript>
+</body>
+<!-- InstanceEnd --></html>

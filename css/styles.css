@@ -9724,6 +9724,11 @@ a {
       .copy_txt {
         font-size: 0.8rem; } }
 
+.logo_footer {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px; }
+
 .barra {
   padding-left: 70px;
   padding-right: 70px; }
