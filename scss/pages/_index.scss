@@ -1,0 +1,99 @@
+.main-index {
+    & .carousel-item {
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      & .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      & h2 {
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0 0 10px;
+        opacity: 0;
+        @media (min-width: 576px) and (max-width: 992px)  {
+          font-size: 80px;
+          text-align: center;
+        }
+        @media (min-width: 992px) {
+          font-size: 100px;
+          text-align: center;
+        }
+      }
+      & h3 {
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0;
+        @media (min-width: 576px) and (max-width: 992px)  {
+          font-size: 40px;
+          text-align: center;
+        }
+        @media (min-width: 992px) {
+          font-size: 50px;
+          text-align: center;
+        }
+      }
+      & p {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        color: #eeeeee;
+        opacity: 0;
+        @media (min-width: 576px) and (max-width: 992px)  {
+          font-size: 35px;
+          text-align: center;
+        }
+        @media (min-width: 992px) {
+          font-size: 45px;
+          text-align: center;
+        }
+      }
+      &.active h2 {
+        animation: fadeInLeft 2.5s ease forwards;
+      }
+      &.active h3 {
+        animation: fadeInLeft 2.5s ease forwards;
+      }
+      &.active p {
+        animation: fadeInRight 7s ease forwards;
+      }
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

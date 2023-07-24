@@ -9773,6 +9773,90 @@ a {
         width: 100%;
         right: 0; } }
 
+.main-index .carousel-item {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
+  .main-index .carousel-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  .main-index .carousel-item .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .main-index .carousel-item h2, .main-index .carousel-item .h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 10px;
+    opacity: 0; }
+    @media (min-width: 576px) and (max-width: 992px) {
+      .main-index .carousel-item h2, .main-index .carousel-item .h2 {
+        font-size: 80px;
+        text-align: center; } }
+    @media (min-width: 992px) {
+      .main-index .carousel-item h2, .main-index .carousel-item .h2 {
+        font-size: 100px;
+        text-align: center; } }
+  .main-index .carousel-item h3, .main-index .carousel-item .h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0; }
+    @media (min-width: 576px) and (max-width: 992px) {
+      .main-index .carousel-item h3, .main-index .carousel-item .h3 {
+        font-size: 40px;
+        text-align: center; } }
+    @media (min-width: 992px) {
+      .main-index .carousel-item h3, .main-index .carousel-item .h3 {
+        font-size: 50px;
+        text-align: center; } }
+  .main-index .carousel-item p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    color: #eeeeee;
+    opacity: 0; }
+    @media (min-width: 576px) and (max-width: 992px) {
+      .main-index .carousel-item p {
+        font-size: 35px;
+        text-align: center; } }
+    @media (min-width: 992px) {
+      .main-index .carousel-item p {
+        font-size: 45px;
+        text-align: center; } }
+  .main-index .carousel-item.active h2, .main-index .carousel-item.active .h2 {
+    animation: fadeInLeft 2.5s ease forwards; }
+  .main-index .carousel-item.active h3, .main-index .carousel-item.active .h3 {
+    animation: fadeInLeft 2.5s ease forwards; }
+  .main-index .carousel-item.active p {
+    animation: fadeInRight 7s ease forwards; }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
 .main-empresa {
   width: 100vw;
   height: 60vh;
@@ -9848,3 +9932,8 @@ a {
       @media (max-width: 572px) {
         .product_container_infoContainer_description ul li {
           font-size: 14px; } }
+
+.main-contacto {
+  margin-top: 120px;
+  width: 100%;
+  height: 65vh; }
