@@ -9729,6 +9729,23 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px; }
 
+@media (max-width: 992px) {
+  .bg-sm-transparente {
+    background-color: rgba(0, 0, 0, 0.8) !important; } }
+
+.bg-transparente {
+  background-color: transparent !important; }
+  .bg-transparente p {
+    color: #000; }
+  @media (min-width: 992px) {
+    .bg-transparente {
+      background-color: rgba(0, 0, 0, 0.8) !important; }
+      .bg-transparente p {
+        color: #fff; } }
+
+.bg-none {
+  background-color: transparent !important; }
+
 .barra {
   padding-left: 70px;
   padding-right: 70px; }
@@ -9777,6 +9794,19 @@ a {
       .nav_boton_animame:hover:after {
         width: 100%;
         right: 0; } }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+@media (max-width: 992px) {
+  .drop-items {
+    text-align: center; } }
+
+@media (min-width: 992px) {
+  .drop-items {
+    color: white; }
+    .drop-items:hover {
+      color: white; } }
 
 .main-index .carousel-item {
   height: 100vh;
@@ -9900,6 +9930,72 @@ a {
     background-position: right top; }
   .empresa_mision_text {
     height: 620px; } }
+
+.proyectos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 120px; }
+  .proyectos_container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; }
+    @media (max-width: 572px) {
+      .proyectos_container {
+        width: 90%; } }
+    @media (min-width: 572px) and (max-width: 992px) {
+      .proyectos_container {
+        width: 85%; } }
+    .proyectos_container_card {
+      width: 40%;
+      max-width: 320px;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+      @media (max-width: 572px) {
+        .proyectos_container_card {
+          width: 90%; } }
+      @media (min-width: 572px) and (max-width: 992px) {
+        .proyectos_container_card {
+          width: 42%; } }
+      @media (min-width: 992px) {
+        .proyectos_container_card:hover {
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          transform: translateY(-3%); } }
+      .proyectos_container_card img {
+        width: 80%;
+        height: auto; }
+      .proyectos_container_card .contenido {
+        padding: 15px;
+        text-align: center; }
+        .proyectos_container_card .contenido p {
+          line-height: 1.5;
+          min-height: 50px;
+          color: #6a6a6a; }
+        .proyectos_container_card .contenido h3, .proyectos_container_card .contenido .h3 {
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin-bottom: 15px; }
+        .proyectos_container_card .contenido a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: #2b2b2b;
+          border: 2px solid #a0a0a0;
+          border-radius: 4px; }
+          @media (min-width: 992px) {
+            .proyectos_container_card .contenido a:hover {
+              background-color: #a0a0a0;
+              color: white; } }
 
 .product_container {
   margin-top: 60px;

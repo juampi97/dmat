@@ -1,0 +1,43 @@
+[
+  {
+    "categoria": "Banda estampada",
+    "nombre": "Inoxidable 430",
+    "items_tabla": [
+      "Fabricadas en acero inoxidable 430",
+      "Carcaza y tornillo de acero SAE 1010 Zincado con cabeza hexagonal",
+      "Carcaza de una sola pieza sin soldadura"
+    ],
+    "medidas": [
+        { "medida": 7, 
+        "minimo": [8, 10, 12], 
+        "maximo": [12, 16, 22] },
+        {"medida": 9, 
+        "minimo": [8, 12, 16, 23, 30, 32, 40, 50, 60, 70, 80, 90, 100, 110, 120], 
+        "maximo": [16, 22, 27, 35, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140] },
+        {"Medida": 12, 
+        "Minimo": [12, 16, 23, 30, 32, 40, 50, 60, 70, 80, 90, 100, 110, 120], 
+        "Maximo": [22, 27, 35, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140] }],
+    "foto": "./img/productos/be430.png"
+  },
+  {
+    "categoria": "Banda estampada",
+    "nombre": "Inoxidable 304",
+    "items_tabla": [
+      "Fabricadas en acero inoxidable 304",
+      "Carcaza de una sola pieza sin soldadura",
+      "Bordes redondeados",
+      "Tornillo cabeza hexagonal"
+    ],
+    "medidas": [
+        { "medida": 7, 
+        "minimo": [8, 10, 12], 
+        "maximo": [12, 16, 22] },
+        {"medida": 9, 
+        "minimo": [8, 12, 16, 23, 30, 32, 40, 50, 60, 70, 80, 90, 100, 110, 120], 
+        "maximo": [16, 22, 27, 35, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140] },
+        {"Medida": 12, 
+        "Minimo": [12, 16, 23, 30, 32, 40, 50, 60, 70, 80, 90, 100, 110, 120], 
+        "Maximo": [22, 27, 35, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140] }],
+    "foto": "./img/productos/be304.png"
+  }
+]

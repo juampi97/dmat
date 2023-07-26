@@ -1,3 +1,26 @@
+.bg-sm-transparente {
+  @media (max-width: 992px) {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+.bg-transparente {
+  background-color: transparent !important;
+  & p {
+    color: #000;
+  }
+  @media (min-width: 992px) {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    & p {
+      color: #fff;
+    }
+  }
+}
+
+.bg-none {
+  background-color: transparent !important;
+}
+
 .barra {
   @media (max-width: 576px) {
     padding-left: 10px;
@@ -9,7 +32,7 @@
   }
   padding-left: 70px;
   padding-right: 70px;
-  
+
   &_logo_img {
     @media (max-width: 576px) {
       height: 50px;
@@ -26,8 +49,8 @@
     text-align: center;
     padding: 20px 0;
   }
-    font-weight: 400;
-    font-size: 1.05rem;
+  font-weight: 400;
+  font-size: 1.05rem;
 }
 
 @media (min-width: 992px) {
@@ -55,6 +78,22 @@
           right: 0;
         }
       }
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.drop-items {
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+  @media (min-width: 992px) {
+    color: white;
+    &:hover{
+      color: white;
     }
   }
 }
