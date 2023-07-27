@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Scripts Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <title>DMAT</title>
+  </head>
+  <body>
+    <header class="header fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary barra">
+        <div class="container-fluid">
+          <div class="barra_logo">
+            <a href="./index.html">
+              <img
+                class="barra_logo_img"
+                src="./img/logo.png"
+                alt="logo DMAT"
+              />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav_boton">
+              <li class="nav-item">
+                <a
+                  class="nav-link active nav_boton_animame ms-2 me-2"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active nav_boton_animame ms-2 me-2"
+                  aria-current="page"
+                  href="./empresa.html"
+                  >Empresa</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active nav_boton_animame ms-2 me-2"
+                  aria-current="page"
+                  href="#"
+                  >Productos</a
+                >
+                <ul class="dropdown-menu bg-transparente">
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./abrazaderas.html"
+                      >Abrazaderas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./precintos.html"
+                      >Precintos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./autopartes.html"
+                      >Autopartes</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./clamps.html"
+                      >Clamps</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./grampasfijaciones.html"
+                      >Grampas - Fijaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./cintasvinitape.html"
+                      >Cintas - Vini tape
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./termocontraibles.html"
+                      >Termocontraible</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./aceiteras.html"
+                      >Aceiteras</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-normal bg-none drop-items"
+                      href="./productos.html"
+                      >Ver todos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active nav_boton_animame ms-2"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid d-flex flex-row justify-content-around p-0">
+        <div
+          class="d-flex flex-column-reverse p-0 col-11 align-items-center justify-content-lg-center product_container_grampas"
+        >
+          <div
+            class="d-flex flex-row col-11 col-lg-5 my-3 my-md-4 justify-content-center align-items-center product_container_imagenContainer"
+          >
+            <img
+              src="./img/productos/categorias/fijaciones.png"
+              alt="clamps"
+              class="product_container_imagenContainer_img"
+            />
+          </div>
+          <div
+            class="col-11 col-lg-7 pt-md-4 pt-lg-0 ps-0 product_container_infoContainer"
+          >
+            <div
+              class="d-flex flex-row align-items-start product_container_infoContainer_title"
+            >
+              <h1 class="mb-1">Grampas y Fijaciones para caños</h1>
+            </div>
+            <div class="linea-sep-azul" style="margin-right: 1%"></div>
+            <div class="product_container_infoContainer_description">
+              <!-- <ul class="list-group list-group-flush">
+                <li class="list-group-item">Anticorrosivo</li>
+                <li class="list-group-item">Antideslizante.</li>
+                <li class="list-group-item">Indeformable</li>
+                <li class="list-group-item">Reducido peso.</li>
+                <li class="list-group-item">Facil colocación.</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="linea-sep-negra mx-4 mx-md-5"></div>  
+    <section class="container-fluid d-flex flex-row justify-content-around p-0">
+      <div class="d-flex flex-column p-0 col-11 ficha_container">
+        <div class="col-12 mt-3 ficha_container_title">
+          <h2 class="text-center">FICHA TÉCNICA</h2>
+          <p class="text-center">Consulte por otras medidas.</p>
+        </div>
+        <div
+          class="col-12 mt-md-3 d-flex flex-column flex-md-row flex-wrap align-items-center align-items-md-start justify-content-md-center ficha_container_tables"
+        >
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera OMEGA</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S01</td>
+                  <td>Abrazadera Omega 1/2</td>
+                </tr>
+                <tr>
+                  <td>S02</td>
+                  <td>Abrazadera Omega 3/4</td>
+                </tr>
+                <tr>
+                  <td>S03</td>
+                  <td>Abrazadera Omega 1</td>
+                </tr>
+                <tr>
+                  <td>S04</td>
+                  <td>Abrazadera Omega 1.1/4</td>
+                </tr>
+                <tr>
+                  <td>S05</td>
+                  <td>Abrazadera Omega 1.1/2</td>
+                </tr>
+                <tr>
+                  <td>S06</td>
+                  <td>Abrazadera Omega 2</td>
+                </tr>
+                <tr>
+                  <td>S07</td>
+                  <td>Abrazadera Omega 2.1/2</td>
+                </tr>
+                <tr>
+                  <td>S08</td>
+                  <td>Abrazadera Omega 3</td>
+                </tr>
+                <tr>
+                  <td>S09</td>
+                  <td>Abrazadera Omega 4</td>
+                </tr>
+                <tr>
+                  <td>S10</td>
+                  <td>Abrazadera Omega 5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera 1/2 OMEGA</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S11</td>
+                  <td>Abrazadera Omega 1/2</td>
+                </tr>
+                <tr>
+                  <td>S12</td>
+                  <td>Abrazadera Omega 3/4</td>
+                </tr>
+                <tr>
+                  <td>S13</td>
+                  <td>Abrazadera Omega 1</td>
+                </tr>
+                <tr>
+                  <td>S14</td>
+                  <td>Abrazadera Omega 1.1/4</td>
+                </tr>
+                <tr>
+                  <td>S15</td>
+                  <td>Abrazadera Omega 1.1/2</td>
+                </tr>
+                <tr>
+                  <td>S16</td>
+                  <td>Abrazadera Omega 2</td>
+                </tr>
+                <tr>
+                  <td>S17</td>
+                  <td>Abrazadera Omega 2.1/2</td>
+                </tr>
+                <tr>
+                  <td>S18</td>
+                  <td>Abrazadera Omega 3</td>
+                </tr>
+                <tr>
+                  <td>S19</td>
+                  <td>Abrazadera Omega 4</td>
+                </tr>
+                <tr>
+                  <td>S20</td>
+                  <td>Abrazadera Omega 5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera 1/2 OMEGA P/C de COBRE</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S21</td>
+                  <td>Abrazadera 1/2 Omega 1/4</td>
+                </tr>
+                <tr>
+                  <td>S22</td>
+                  <td>Abrazadera 1/2 Omega 5/16</td>
+                </tr>
+                <tr>
+                  <td>S23</td>
+                  <td>Abrazadera 1/2 Omega 3/8</td>
+                </tr>
+                <tr>
+                  <td>S24</td>
+                  <td>Abrazadera 1/2 Omega 1/2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera tipo "U" Rosca 1/4</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S25</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 1/2</td>
+                </tr>
+                <tr>
+                  <td>S26</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 3/4</td>
+                </tr>
+                <tr>
+                  <td>S27</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 1</td>
+                </tr>
+                <tr>
+                  <td>S28</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 1.1/4</td>
+                </tr>
+                <tr>
+                  <td>S29</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 1.1/2</td>
+                </tr>
+                <tr>
+                  <td>S30</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 2</td>
+                </tr>
+                <tr>
+                  <td>S31</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 2.1/2</td>
+                </tr>
+                <tr>
+                  <td>S32</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 3</td>
+                </tr>
+                <tr>
+                  <td>S33</td>
+                  <td>Abrazadera Tipo “U” 1/4 X 4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="linea-sep-azul mx-4 mx-md-5"></div>  
+    <section class="container-fluid d-flex flex-row justify-content-around p-0">
+      <div class="d-flex flex-column p-0 col-11 ficha_container">
+        <div class="col-12 mt-3 ficha_container_title">
+          <p class="text-center py-2">Consultar otras medidas y diámetros de rosca.</p>
+        </div>
+        <div
+          class="col-12 mt-md-3 d-flex flex-column flex-md-row flex-wrap align-items-center align-items-md-start justify-content-md-center ficha_container_tables"
+        >
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera OMEGA para Caño Plástico</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S34</td>
+                  <td>Abrazadera Omega 40mm</td>
+                </tr>
+                <tr>
+                  <td>S35</td>
+                  <td>Abrazadera Omega 50mm</td>
+                </tr>
+                <tr>
+                  <td>S36</td>
+                  <td>Abrazadera Omega 63mm</td>
+                </tr>
+                <tr>
+                  <td>S37</td>
+                  <td>Abrazadera Omega 75mm</td>
+                </tr>
+                <tr>
+                  <td>S38</td>
+                  <td>Abrazadera Omega 90mm</td>
+                </tr>
+                <tr>
+                  <td>S39</td>
+                  <td>Abrazadera Omega 110mm</td>
+                </tr>
+                <tr>
+                  <td>S40</td>
+                  <td>Abrazadera Omega 125mm</td>
+                </tr>
+                <tr>
+                  <td>S42</td>
+                  <td>Abrazadera Omega 160</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera con Cola P/Amurar Caño Plástico</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S43</td>
+                  <td>Abrazadera con cola 40mm X 200mm</td>
+                </tr>
+                <tr>
+                  <td>S44</td>
+                  <td>Abrazadera con cola 40mm X 300mm</td>
+                </tr>
+                <tr>
+                  <td>S45</td>
+                  <td>Abrazadera con cola 63mm X 200mm</td>
+                </tr>
+                <tr>
+                  <td>S46</td>
+                  <td>Abrazadera con cola 63mm X 300mm</td>
+                </tr>
+                <tr>
+                  <td>S47</td>
+                  <td>Abrazadera con cola 90mm X 300mm</td>
+                </tr>
+                <tr>
+                  <td>S48</td>
+                  <td>Abrazadera con cola 110mm X 300mm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Abrazadera con Cola P/Amurar Caño Galvanizado</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S52</td>
+                  <td>Abrazadera con cola 1/2 X 80mm</td>
+                </tr>
+                <tr>
+                  <td>S53</td>
+                  <td>Abrazadera con cola 3/4 X 80mm</td>
+                </tr>
+                <tr>
+                  <td>S54</td>
+                  <td>Abrazadera con cola 1 X 80mm</td>
+                </tr>
+                <tr>
+                  <td>S55</td>
+                  <td>Abrazadera con cola 1.1/4 X 80mm</td>
+                </tr>
+                <tr>
+                  <td>S56</td>
+                  <td>Abrazadera con cola 1.1/2 X 200mm</td>
+                </tr>
+                <tr>
+                  <td>S57</td>
+                  <td>Abrazadera con cola 2 X 200mm</td>
+                </tr>
+                <tr>
+                  <td>S58</td>
+                  <td>Abrazadera con cola 2.1/2 X 200mm</td>
+                </tr>
+                <tr>
+                  <td>S59</td>
+                  <td>Abrazadera con cola 3 X 300mm</td>
+                </tr>
+                <tr>
+                  <td>S60</td>
+                  <td>Abrazadera con cola 4 X 300mm</td>
+                </tr>
+                <tr>
+                  <td>S61</td>
+                  <td>Abrazadera con cola 5 X 300mm</td>
+                </tr>
+                <tr>
+                  <td>S62</td>
+                  <td>Abrazadera con cola 6 X 300mm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Grampas para Termotanques</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S69</td>
+                  <td>Para Amurar reforzadas</td>
+                </tr>
+                <tr>
+                  <td>S70</td>
+                  <td>xtensible con tarugo reforzadas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Grampas para amurar Lavatorios</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S63</td>
+                  <td>Chica</td>
+                </tr>
+                <tr>
+                  <td>S64</td>
+                  <td>Grande</td>
+                </tr>
+                <tr>
+                  <td>S65</td>
+                  <td>Tipo Ferrum</td>
+                </tr>
+                <tr>
+                  <td>S66</td>
+                  <td>Con Orificio</td>
+                </tr>
+                <tr>
+                  <td>S67</td>
+                  <td>Tipo Escuadra</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Grampas para Caño de Arrimar</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S75</td>
+                  <td>Abrazadera de arrimar 1/2</td>
+                </tr>
+                <tr>
+                  <td>S76</td>
+                  <td>Abrazadera de arrimar 3/4</td>
+                </tr>
+                <tr>
+                  <td>S77</td>
+                  <td>Abrazadera de arrimar 1</td>
+                </tr>
+                <tr>
+                  <td>S78</td>
+                  <td>Abrazadera de arrimar 1.1/4</td>
+                </tr>
+                <tr>
+                  <td>S79</td>
+                  <td>Abrazadera de arrimar 1.1/2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Grampas para Cañeria Colgante "Lazo" Liviana</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S80</td>
+                  <td>Abrazadera tipo lazo 1/2</td>
+                </tr>
+                <tr>
+                  <td>S81</td>
+                  <td>Abrazadera tipo lazo 3/4</td>
+                </tr>
+                <tr>
+                  <td>S82</td>
+                  <td>Abrazadera tipo lazo 1</td>
+                </tr>
+                <tr>
+                  <td>S83</td>
+                  <td>Abrazadera tipo lazo 1.1/4</td>
+                </tr>
+                <tr>
+                  <td>S84</td>
+                  <td>Abrazadera tipo lazo 1.1/2</td>
+                </tr>
+                <tr>
+                  <td>S85</td>
+                  <td>Abrazadera tipo lazo 2</td>
+                </tr>
+                <tr>
+                  <td>S86</td>
+                  <td>Abrazadera tipo lazo 2.1/2</td>
+                </tr>
+                <tr>
+                  <td>S87</td>
+                  <td>Abrazadera tipo lazo 3</td>
+                </tr>
+                <tr>
+                  <td>S88</td>
+                  <td>Abrazadera tipo lazo 4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Gramps para Caño de Gas</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S91</td>
+                  <td>Con tarugo y tornillo epoxi 1/2</td>
+                </tr>
+                <tr>
+                  <td>S92</td>
+                  <td>Con tarugo y tornillo epoxi 3/4</td>
+                </tr>
+                <tr>
+                  <td>S93</td>
+                  <td>Con tarugo y tornillo epoxi 1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Fleje Perforado</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S89</td>
+                  <td>Fleje de 0.71mm X 19 mm x 30 mts</td>
+                </tr>
+                <tr>
+                  <td>S90</td>
+                  <td>Fleje de 1.10 mmX 19 mm x 30 mts</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Ganchos para Artefactos de Luz</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S113</td>
+                  <td>De centro 1/4 con accesorios</td>
+                </tr>
+                <tr>
+                  <td>S114</td>
+                  <td>De centro 3/16 con accesorios</td>
+                </tr>
+                <tr>
+                  <td>S115</td>
+                  <td>Bastón 1/4 con accesorios</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Ganchos para Techo Tipo Bastón</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S94</td>
+                  <td>50mm Con accesorio “g”</td>
+                </tr>
+                <tr>
+                  <td>S95</td>
+                  <td>70mm Con accesorio “g”</td>
+                </tr>
+                <tr>
+                  <td>S96</td>
+                  <td>80mm Con accesorio “g”</td>
+                </tr>
+                <tr>
+                  <td>S97</td>
+                  <td>90mm Con accesorio “g”</td>
+                </tr>
+                <tr>
+                  <td>S98</td>
+                  <td>100mm Con accesorio “g”</td>
+                </tr>
+                <tr>
+                  <td>S99</td>
+                  <td>120mm Con accesorio “g”</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Ganchos para Estirar Alambre</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S100</td>
+                  <td>5/16 x 7 con arandela y tuerca</td>
+                </tr>
+                <tr>
+                  <td>S101</td>
+                  <td>5/16 x 8 con arandela y tuerca</td>
+                </tr>
+                <tr>
+                  <td>S102</td>
+                  <td>5/16 x 9 con arandela y tuerca</td>
+                </tr>
+                <tr>
+                  <td>S103</td>
+                  <td>3/8 x 7 con arandela y tuerca</td>
+                </tr>
+                <tr>
+                  <td>S104</td>
+                  <td>3/8 x 8 con arandela y tuerca</td>
+                </tr>
+                <tr>
+                  <td>S105</td>
+                  <td>3/8 x 9 con arandela y tuerca</td>
+                </tr>
+                <tr>
+                  <td>S106</td>
+                  <td>3/8 x 10 con arandela y tuerca</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-11 col-md-6 col-lg-4 mx-0 mx-md-4 my-2 my-md-0">
+            <table class="table text-center table-striped">
+              <thead class="text-center">
+                <tr>
+                  <th scope="col" colspan="2">Torniquetes para Estirar Alambre</th>
+                </tr>
+                <tr>
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">DETALLE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S107</td>
+                  <td>Micro</td>
+                </tr>
+                <tr>
+                  <td>S108</td>
+                  <td>Micro</td>
+                </tr>
+                <tr>
+                  <td>S109</td>
+                  <td>N° 7</td>
+                </tr>
+                <tr>
+                  <td>S110</td>
+                  <td>N° 6</td>
+                </tr>
+                <tr>
+                  <td>S111</td>
+                  <td>N° 8</td>
+                </tr>
+                <tr>
+                  <td>S112</td>
+                  <td>Doble</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- Footer -->
+  <footer class="bg-azul pt-3 pt-lg-3">
+    <div
+      class="container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-center"
+    >
+      <div
+        class="col-9 col-lg-4 col-xl-3 d-flex justify-content-around my-4 my-lg-3"
+      >
+        <div class="logo_footer">
+          <a href="#top"
+            ><img class="barra_logo_img" src="./img/logo.png" alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div class="d-flex flex-column col-9 col-lg-4 col-xl-3">
+        <p class="text-blanco my-1 my-lg-3 pt-2 text-center">
+          <a
+            class="text-blanco"
+            target="_blank"
+            href="https://www.google.com/maps/place/Comuna+4,+Mom+2945,+C1437AKE+CABA/data=!4m2!3m1!1s0x95bccb98f9c5274b:0x604c846f19274da6?sa=X&ved=2ahUKEwjd-IqYxqeAAxUbrpUCHZVGCuoQ8gF6BAgREAA&ved=2ahUKEwjd-IqYxqeAAxUbrpUCHZVGCuoQ8gF6BAgZEAI"
+            >Direccion: Mom 2945 - CABA</a
+          >
+        </p>
+        <!-- <p class="text-blanco my-1 my-lg-2 text-center">Telefono</p> -->
+        <p class="text-blanco my-1 my-lg-2 text-center">(5411) 4918-8349</p>
+        <a
+          href="mailto: damat@dmat.com.ar"
+          class="text-blanco my-1 my-lg-3 text-center"
+          >Mail: damat@dmat.com.ar</a
+        >
+      </div>
+      <div
+        class="col-9 col-lg-4 col-xl-3 d-flex justify-content-around align-items-center my-4 my-lg-3"
+      >
+        <img src="./img/bandera.png" alt="Bandera argentina" />
+      </div>
+    </div>
+    <div
+      class="container-fluid d-flex flex-row justify-content-center align-items-center mt-4 copy"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="white"
+        class="bi bi-c-circle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+        />
+      </svg>
+      <p class="ms-4 pt-3 copy_txt">
+        2023 Juan Pablo Calabro - Antiguohobby - Diseño web - CIUDAD AUTÓNOMA DE
+        BUENOS AIRES
+      </p>
+    </div>
+  </footer>
+</html>

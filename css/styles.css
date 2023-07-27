@@ -9933,6 +9933,7 @@ a {
 
 .proyectos {
   width: 100%;
+  min-height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -10032,6 +10033,121 @@ a {
       margin-top: 30px; }
       @media (max-width: 572px) {
         .product_container_infoContainer_description ul li {
+          font-size: 14px; } }
+
+.product_container_grampas {
+  margin-top: 80px;
+  height: 450px; }
+  @media (max-width: 572px) {
+    .product_container_grampas {
+      margin-top: 10px;
+      height: 380px; } }
+  @media (min-width: 572px) and (max-width: 992px) {
+    .product_container_grampas {
+      margin-top: 50px; } }
+  .product_container_grampas_imagenContainer_img {
+    width: 250px; }
+    @media (max-width: 572px) {
+      .product_container_grampas_imagenContainer_img {
+        width: 190px; } }
+  .product_container_grampas_infoContainer {
+    margin-top: 10px; }
+    @media (max-width: 572px) {
+      .product_container_grampas_infoContainer {
+        margin-top: 10px; } }
+    .product_container_grampas_infoContainer_title {
+      height: 60px; }
+      @media (max-width: 572px) {
+        .product_container_grampas_infoContainer_title {
+          height: 44px; } }
+      .product_container_grampas_infoContainer_title h1, .product_container_grampas_infoContainer_title .h1 {
+        font-size: 30px;
+        font-weight: 500; }
+        @media (max-width: 572px) {
+          .product_container_grampas_infoContainer_title h1, .product_container_grampas_infoContainer_title .h1 {
+            font-size: 20px;
+            font-weight: 500; } }
+    .product_container_grampas_infoContainer_description {
+      margin-top: 30px; }
+      @media (max-width: 572px) {
+        .product_container_grampas_infoContainer_description ul li {
+          font-size: 14px; } }
+
+.product_container_termocontraible {
+  margin-top: 80px;
+  height: 450px; }
+  @media (max-width: 572px) {
+    .product_container_termocontraible {
+      margin-top: 10px;
+      height: 380px; } }
+  @media (min-width: 572px) and (max-width: 992px) {
+    .product_container_termocontraible {
+      margin-top: 50px; } }
+  .product_container_termocontraible_imagenContainer_img {
+    width: 250px; }
+    @media (max-width: 572px) {
+      .product_container_termocontraible_imagenContainer_img {
+        width: 190px; } }
+  .product_container_termocontraible_infoContainer {
+    margin-top: 10px; }
+    @media (max-width: 572px) {
+      .product_container_termocontraible_infoContainer {
+        margin-top: 10px; } }
+    .product_container_termocontraible_infoContainer_title {
+      height: 60px; }
+      @media (max-width: 572px) {
+        .product_container_termocontraible_infoContainer_title {
+          height: 44px; } }
+      .product_container_termocontraible_infoContainer_title h1, .product_container_termocontraible_infoContainer_title .h1 {
+        font-size: 30px;
+        font-weight: 500; }
+        @media (max-width: 572px) {
+          .product_container_termocontraible_infoContainer_title h1, .product_container_termocontraible_infoContainer_title .h1 {
+            font-size: 20px;
+            font-weight: 500; } }
+    .product_container_termocontraible_infoContainer_description {
+      margin-top: 30px; }
+      @media (max-width: 572px) {
+        .product_container_termocontraible_infoContainer_description ul li {
+          font-size: 14px; } }
+
+.product_container_aceiteras {
+  margin-top: 75px;
+  height: 600px; }
+  @media (max-width: 572px) {
+    .product_container_aceiteras {
+      margin-top: 100px;
+      height: 400px; } }
+  @media (min-width: 572px) and (max-width: 992px) {
+    .product_container_aceiteras {
+      margin-top: 0px;
+      height: 650px; } }
+  .product_container_aceiteras_imagenContainer_img {
+    width: 250px; }
+    @media (max-width: 572px) {
+      .product_container_aceiteras_imagenContainer_img {
+        width: 190px; } }
+  .product_container_aceiteras_infoContainer {
+    margin-top: 10px; }
+    @media (max-width: 572px) {
+      .product_container_aceiteras_infoContainer {
+        margin-top: 10px; } }
+    .product_container_aceiteras_infoContainer_title {
+      height: 60px; }
+      @media (max-width: 572px) {
+        .product_container_aceiteras_infoContainer_title {
+          height: 44px; } }
+      .product_container_aceiteras_infoContainer_title h1, .product_container_aceiteras_infoContainer_title .h1 {
+        font-size: 30px;
+        font-weight: 500; }
+        @media (max-width: 572px) {
+          .product_container_aceiteras_infoContainer_title h1, .product_container_aceiteras_infoContainer_title .h1 {
+            font-size: 20px;
+            font-weight: 500; } }
+    .product_container_aceiteras_infoContainer_description {
+      margin-top: 30px; }
+      @media (max-width: 572px) {
+        .product_container_aceiteras_infoContainer_description ul li {
           font-size: 14px; } }
 
 .main-contacto {

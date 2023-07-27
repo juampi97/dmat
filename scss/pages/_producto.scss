@@ -1,5 +1,5 @@
 .product_container {
-  @media (max-width: 572px){
+  @media (max-width: 572px) {
     margin-top: 150px;
   }
   @media (min-width: 572px) and (max-width: 992px) {
@@ -9,7 +9,7 @@
   height: 450px;
   &_imagenContainer {
     &_img {
-      @media (max-width: 572px){
+      @media (max-width: 572px) {
         width: 190px;
       }
       width: 250px;
@@ -37,7 +37,151 @@
     &_description {
       margin-top: 30px;
       & ul li {
-        @media (max-width: 572px){
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.product_container_grampas {
+  @media (max-width: 572px) {
+    margin-top: 10px;
+    height: 380px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 50px;
+  }
+  margin-top: 80px;
+  height: 450px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_termocontraible {
+  @media (max-width: 572px) {
+    margin-top: 10px;
+    height: 380px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 50px;
+  }
+  margin-top: 80px;
+  height: 450px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_aceiteras {
+  @media (max-width: 572px) {
+    margin-top: 100px;
+    height: 400px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 0px;
+    height: 650px;
+  }
+  margin-top: 75px;
+  height: 600px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
           font-size: 14px;
         }
       }
