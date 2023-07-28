@@ -23,121 +23,142 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
   </head>
-  <body>
-    <header class="header fixed-top">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary barra">
-        <div class="container-fluid">
-          <div class="barra_logo">
-            <a href="./index.html">
-              <img
-                class="barra_logo_img"
-                src="./img/logo.png"
-                alt="logo DMAT"
-              />
+  <header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary barra">
+      <div class="container-fluid">
+        <div class="barra_logo">
+          <a href="./index.html">
+            <img
+              class="barra_logo_img"
+              src="./img/logo.png"
+              alt="logo DMAT"
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav_boton">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav_boton_animame ms-2 me-2"
+                aria-current="page"
+                href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav_boton_animame ms-2 me-2"
+                aria-current="page"
+                href="./empresa.html"
+                >Empresa</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active nav_boton_animame ms-2 me-2"
+                aria-current="page"
+                href="#"
+                >Productos</a
+              >
+              <ul class="dropdown-menu bg-transparente">
+                <li>
+                  <a
+                    class="dropdown-item fw-normal bg-none drop-items"
+                    href="./abrazaderas.html"
+                    >Abrazaderas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./precintos.html"
+                    >Precintos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./autopartes.html"
+                    >Autopartes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./clamps.html"
+                    >Clamps</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./grampasfijaciones.html"
+                    >Grampas - Fijaciones</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./cintasvinitape.html"
+                    >Cintas - Vini tape
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./termocontraibles.html"
+                    >Termocontraible</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-normal bg-none drop-items" href="./aceiteras.html"
+                    >Aceiteras</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item fw-normal bg-none drop-items"
+                    href="./productos.html"
+                    >Ver todos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav_boton_animame ms-2"
+                aria-current="page"
+                href="./contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <div class="ps-3">
+            <a target="_blank" href="https://damat.com.ar/">
+              <button
+                type="button"
+                id="btnCarrito"
+                class="btn btn-azul me-3 mb-2 w-auto h-auto mt-lg-1"
+                width="60"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  class="bi bi-cart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+              </button>
             </a>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto nav_boton">
-              <li class="nav-item">
-                <a
-                  class="nav-link active nav_boton_animame ms-2 me-2"
-                  aria-current="page"
-                  href="./index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active nav_boton_animame ms-2 me-2"
-                  aria-current="page"
-                  href="./empresa.html"
-                  >Empresa</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link active nav_boton_animame ms-2 me-2"
-                  aria-current="page"
-                  href="#"
-                  >Productos</a
-                >
-                <ul class="dropdown-menu bg-transparente">
-                  <li>
-                    <a
-                      class="dropdown-item fw-normal bg-none drop-items"
-                      href="./abrazaderas.html"
-                      >Abrazaderas</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./precintos.html"
-                      >Precintos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./autopartes.html"
-                      >Autopartes</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./clamps.html"
-                      >Clamps</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./grampa
-                    sfijaciones.html"
-                      >Grampas - Fijaciones</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./cintasvinitape.html"
-                      >Cintas - Vini tape
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./termocontraibles.html"
-                      >Termocontraible</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item fw-normal bg-none drop-items" href="./aceiteras.html"
-                      >Aceiteras</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item fw-normal bg-none drop-items"
-                      href="./productos.html"
-                      >Ver todos</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active nav_boton_animame ms-2"
-                  aria-current="page"
-                  href="./contacto.html"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
     <main>
       <div class="container-fluid d-flex flex-row justify-content-around p-0">
         <div
