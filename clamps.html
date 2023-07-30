@@ -19,18 +19,31 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-        <!-- Scripts -->
-        <script src="./js/components.js"></script>
+    <!-- Scripts -->
+    <script src="./js/components.js"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
   </head>
   <body>
     <div id="nav"></div>
+    <!-- Guia de ruta -->
+    <section class="container-fluid d-flex justify-content-around">
+      <div class="guiaRuta mb-1 mb-md-4 mb-lg-0">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="./productos.html">Productos</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Clamps</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
     <main>
       <div class="container-fluid d-flex flex-row justify-content-around p-0">
         <div
-          class="d-flex flex-column-reverse flex-lg-row p-0 col-11 align-items-center justify-content-lg-center product_container"
+          class="d-flex flex-column-reverse flex-lg-row p-0 col-11 align-items-start justify-content-lg-center product_container"
         >
           <div
             class="d-flex flex-row col-11 col-lg-5 my-3 my-md-4 justify-content-center align-items-center product_container_imagenContainer"
@@ -84,8 +97,10 @@
         <div
           class="col-12 mt-md-3 d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-center ficha_container_tables"
         >
-        <!-- Tabla celulares -->
-          <div class="col-11 col-md-8 col-lg-6 mx-0 mx-md-4 my-2 my-md-0 d-md-none">
+          <!-- Tabla celulares -->
+          <div
+            class="col-11 col-md-8 col-lg-6 mx-0 mx-md-4 my-2 my-md-0 d-md-none"
+          >
             <table class="table text-center table-striped">
               <thead class="text-center">
                 <tr>
@@ -146,8 +161,10 @@
               </tbody>
             </table>
           </div>
-        <!-- Tabla tablets - pc -->
-          <div class="col-11 col-md-8 col-lg-5 mx-0 mx-md-4 my-2 my-md-0 d-none d-md-flex">
+          <!-- Tabla tablets - pc -->
+          <div
+            class="col-11 col-md-8 col-lg-5 mx-0 mx-md-4 my-2 my-md-0 d-none d-md-flex"
+          >
             <table class="table text-center table-striped">
               <thead class="text-center">
                 <tr>

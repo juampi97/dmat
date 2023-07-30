@@ -1,12 +1,16 @@
 .product_container {
   @media (max-width: 572px) {
-    margin-top: 150px;
+    // margin-top: 150px;
   }
   @media (min-width: 572px) and (max-width: 992px) {
     margin-top: 220px;
+    height: 350px;
   }
-  margin-top: 60px;
-  height: 450px;
+  @media (min-width: 992px) {
+    height: 350px;
+  }
+  // margin-top: 60px;  
+  // height: 350px;
   &_imagenContainer {
     &_img {
       @media (max-width: 572px) {
@@ -46,14 +50,14 @@
 }
 .product_container_grampas {
   @media (max-width: 572px) {
-    margin-top: 10px;
-    height: 380px;
+    // margin-top: 10px;
+    height: 320px;
   }
   @media (min-width: 572px) and (max-width: 992px) {
-    margin-top: 50px;
+    // margin-top: 50px;
   }
-  margin-top: 80px;
-  height: 450px;
+  // margin-top: 80px;
+  height: 400px;
   &_imagenContainer {
     &_img {
       @media (max-width: 572px) {
@@ -94,14 +98,14 @@
 
 .product_container_termocontraible {
   @media (max-width: 572px) {
-    margin-top: 10px;
-    height: 380px;
+    // margin-top: 10px;
+    height: 340px;
   }
   @media (min-width: 572px) and (max-width: 992px) {
-    margin-top: 50px;
+    margin-top: 15px;
   }
-  margin-top: 80px;
-  height: 450px;
+    // margin-top: 80px;
+  height: 410px;
   &_imagenContainer {
     &_img {
       @media (max-width: 572px) {
@@ -142,16 +146,16 @@
 
 .product_container_aceiteras {
   @media (max-width: 572px) {
-    margin-top: 100px;
+    margin-top: 120px;
     height: 400px;
   }
   @media (min-width: 572px) and (max-width: 992px) {
     margin-top: 0px;
-    height: 650px;
+    height: 570px;
   }
-  margin-top: 0px;
+  // margin-top: 0px;
   margin-bottom: 125px;
-  height: 750px;
+  height: 570px;
   &_imagenContainer {
     &_img {
       @media (max-width: 572px) {
