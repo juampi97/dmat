@@ -4,7 +4,7 @@
   }
   @media (min-width: 572px) and (max-width: 992px) {
     margin-top: 220px;
-    height: 350px;
+    height: 300px;
   }
   @media (min-width: 992px) {
     height: 350px;
@@ -156,6 +156,310 @@
   // margin-top: 0px;
   margin-bottom: 125px;
   height: 570px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_powerclip {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 220px;
+    height: 380px;
+  }
+  @media (min-width: 992px) {
+    height: 350px;
+  }
+  // margin-top: 60px;  
+  // height: 350px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_powertrak {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 220px;
+    height: 380px;
+  }
+  @media (min-width: 992px) {
+    height: 350px;
+  }
+  // margin-top: 60px;  
+  // height: 350px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_superpresion {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 220px;
+    height: 420px;
+  }
+  @media (min-width: 992px) {
+    height: 350px;
+    margin-bottom: 40px;  
+  }
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_plasticasrapidas {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 220px;
+    height: 470px;
+  }
+  @media (min-width: 992px) {
+    height: 420px;
+    margin-bottom: 40px;  
+  }
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_escape {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 240px;
+    height: 250px;
+  }
+  @media (min-width: 992px) {
+    height: 350px;
+  }
+  // margin-top: 60px;  
+  // height: 350px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_exhibidores {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 160px;
+    height: 250px;
+  }
+  @media (min-width: 992px) {
+    height: 350px;
+  }
+  // margin-top: 60px;  
+  // height: 350px;
   &_imagenContainer {
     &_img {
       @media (max-width: 572px) {

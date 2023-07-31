@@ -19,18 +19,36 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-        <!-- Scripts -->
-        <script src="./js/components.js"></script>
+    <!-- Scripts -->
+    <script src="./js/components.js"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
   </head>
   <body>
     <div id="nav"></div>
+    <!-- Guia de ruta -->
+    <section class="container-fluid d-flex justify-content-around mb-md-4 mb-lg-0">
+      <div class="guiaRuta">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="./productos.html">Productos</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="./abrazaderas.html">Abrazaderas</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Inoxidable AISI 304
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
     <main>
       <div class="container-fluid d-flex flex-row justify-content-around p-0">
         <div
-          class="d-flex flex-column-reverse flex-lg-row p-0 col-11 align-items-center justify-content-lg-center product_container"
+          class="d-flex flex-column-reverse flex-lg-row p-0 col-11 align-items-start justify-content-lg-center product_container"
         >
           <div
             class="d-flex flex-row col-11 col-lg-5 my-3 my-md-4 justify-content-center align-items-center product_container_imagenContainer"
@@ -58,12 +76,8 @@
                 <li class="list-group-item">
                   Carcaza de una sola pieza sin soldadura.
                 </li>
-                <li class="list-group-item">
-                  Bordes redondeados.
-                </li>
-                <li class="list-group-item">
-                  Tornillo cabeza hexagonal.
-                </li>
+                <li class="list-group-item">Bordes redondeados.</li>
+                <li class="list-group-item">Tornillo cabeza hexagonal.</li>
               </ul>
             </div>
           </div>

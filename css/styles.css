@@ -9739,7 +9739,7 @@ a {
   @media (max-width: 572px) {
     .guiaRuta {
       margin-top: 100px;
-      width: 85%; } }
+      width: 90%; } }
 
 @media (max-width: 992px) {
   .bg-sm-transparente {
@@ -10012,7 +10012,7 @@ a {
 @media (min-width: 572px) and (max-width: 992px) {
   .product_container {
     margin-top: 220px;
-    height: 350px; } }
+    height: 300px; } }
 
 @media (min-width: 992px) {
   .product_container {
@@ -10154,6 +10154,236 @@ a {
       @media (max-width: 572px) {
         .product_container_aceiteras_infoContainer_description ul li {
           font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_powerclip {
+    margin-top: 220px;
+    height: 380px; } }
+
+@media (min-width: 992px) {
+  .product_container_powerclip {
+    height: 350px; } }
+
+.product_container_powerclip_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_powerclip_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_powerclip_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_powerclip_infoContainer {
+      margin-top: 10px; } }
+  .product_container_powerclip_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_powerclip_infoContainer_title {
+        height: 44px; } }
+    .product_container_powerclip_infoContainer_title h1, .product_container_powerclip_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_powerclip_infoContainer_title h1, .product_container_powerclip_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_powerclip_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_powerclip_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_powertrak {
+    margin-top: 220px;
+    height: 380px; } }
+
+@media (min-width: 992px) {
+  .product_container_powertrak {
+    height: 350px; } }
+
+.product_container_powertrak_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_powertrak_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_powertrak_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_powertrak_infoContainer {
+      margin-top: 10px; } }
+  .product_container_powertrak_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_powertrak_infoContainer_title {
+        height: 44px; } }
+    .product_container_powertrak_infoContainer_title h1, .product_container_powertrak_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_powertrak_infoContainer_title h1, .product_container_powertrak_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_powertrak_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_powertrak_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_superpresion {
+    margin-top: 220px;
+    height: 420px; } }
+
+@media (min-width: 992px) {
+  .product_container_superpresion {
+    height: 350px;
+    margin-bottom: 40px; } }
+
+.product_container_superpresion_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_superpresion_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_superpresion_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_superpresion_infoContainer {
+      margin-top: 10px; } }
+  .product_container_superpresion_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_superpresion_infoContainer_title {
+        height: 44px; } }
+    .product_container_superpresion_infoContainer_title h1, .product_container_superpresion_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_superpresion_infoContainer_title h1, .product_container_superpresion_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_superpresion_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_superpresion_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_plasticasrapidas {
+    margin-top: 220px;
+    height: 470px; } }
+
+@media (min-width: 992px) {
+  .product_container_plasticasrapidas {
+    height: 420px;
+    margin-bottom: 40px; } }
+
+.product_container_plasticasrapidas_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_plasticasrapidas_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_plasticasrapidas_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_plasticasrapidas_infoContainer {
+      margin-top: 10px; } }
+  .product_container_plasticasrapidas_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_plasticasrapidas_infoContainer_title {
+        height: 44px; } }
+    .product_container_plasticasrapidas_infoContainer_title h1, .product_container_plasticasrapidas_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_plasticasrapidas_infoContainer_title h1, .product_container_plasticasrapidas_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_plasticasrapidas_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_plasticasrapidas_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_escape {
+    margin-top: 240px;
+    height: 250px; } }
+
+@media (min-width: 992px) {
+  .product_container_escape {
+    height: 350px; } }
+
+.product_container_escape_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_escape_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_escape_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_escape_infoContainer {
+      margin-top: 10px; } }
+  .product_container_escape_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_escape_infoContainer_title {
+        height: 44px; } }
+    .product_container_escape_infoContainer_title h1, .product_container_escape_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_escape_infoContainer_title h1, .product_container_escape_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_escape_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_escape_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_exhibidores {
+    margin-top: 160px;
+    height: 250px; } }
+
+@media (min-width: 992px) {
+  .product_container_exhibidores {
+    height: 350px; } }
+
+.product_container_exhibidores_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_exhibidores_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_exhibidores_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_exhibidores_infoContainer {
+      margin-top: 10px; } }
+  .product_container_exhibidores_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_exhibidores_infoContainer_title {
+        height: 44px; } }
+    .product_container_exhibidores_infoContainer_title h1, .product_container_exhibidores_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_exhibidores_infoContainer_title h1, .product_container_exhibidores_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_exhibidores_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_exhibidores_infoContainer_description ul li {
+        font-size: 14px; } }
 
 .main-contacto {
   margin-top: 120px;
