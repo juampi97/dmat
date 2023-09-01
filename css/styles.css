@@ -9706,12 +9706,12 @@ a {
   height: 3px;
   background-color: #373535; }
 
-.fixedFlecha {
+.fixedWapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1; }
-  .fixedFlecha_img {
+  .fixedWapp_img {
     width: 50px; }
 
 .copy {
@@ -9728,6 +9728,10 @@ a {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px; }
+
+.direccion_footer {
+  height: 30px;
+  width: auto; }
 
 .guiaRuta {
   margin-top: 120px;

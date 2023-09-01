@@ -100,13 +100,6 @@ let header = `
             <li>
               <a
                 class="dropdown-item fw-normal bg-none drop-items"
-                href="./aceiteras.html"
-                >Aceiteras</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item fw-normal bg-none drop-items"
                 href="./productos.html"
                 >Ver todos</a
               >
@@ -149,6 +142,16 @@ let header = `
   </div>
 </nav>
 </header>
+<!-- Inicio boton_fixed_botonTop  -->
+<div class="fixedWapp">
+  <a href="#top"
+    ><img
+      src="./img/wapp.png"
+      alt="LogoWapp"
+      class="fixedWapp_img"
+  /></a>
+</div>
+<!-- Fin boton_fixed_botonTop  -->
 `
 
 let footer = `
@@ -170,8 +173,9 @@ let footer = `
       <a
         class="text-blanco"
         target="_blank"
+        translate="no"
         href="https://www.google.com/maps/place/Comuna+4,+Mom+2945,+C1437AKE+CABA/data=!4m2!3m1!1s0x95bccb98f9c5274b:0x604c846f19274da6?sa=X&ved=2ahUKEwjd-IqYxqeAAxUbrpUCHZVGCuoQ8gF6BAgREAA&ved=2ahUKEwjd-IqYxqeAAxUbrpUCHZVGCuoQ8gF6BAgZEAI"
-        >Direccion: Mom 2945 - CABA</a
+        >Dirección: Mom 2945 - CABA</a
       >
     </p>
     <!-- <p class="text-blanco my-1 my-lg-2 text-center">Telefono</p> -->
@@ -211,12 +215,18 @@ let footer = `
 </footer>
 `
 
+let wapp_logo = `
+
+`
+
 window.onload = function () {
   const nav = document.querySelector('#nav');
   const pie = document.querySelector('#pie');  
+  const logo_wapp = document.querySelector('#logo_wapp');
 
   nav.innerHTML = header;  
   pie.innerHTML = footer;
+  logo_wapp.innerHTML = wapp_logo;
 }
 
 
