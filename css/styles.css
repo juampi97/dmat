@@ -9708,9 +9708,24 @@ a {
 
 .fixedWapp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
   z-index: 1; }
+  @media (max-width: 572px) {
+    .fixedWapp {
+      right: 20px;
+      bottom: 20px; } }
+  @media (min-width: 573px) and (max-width: 992px) {
+    .fixedWapp {
+      right: 40px;
+      bottom: 40px; } }
+  @media (min-width: 993px) and (max-width: 1306px) {
+    .fixedWapp {
+      right: 50px;
+      bottom: 50px; } }
+  @media (min-width: 1307px) {
+    .fixedWapp {
+      right: 50px;
+      bottom: 50px; } }
   .fixedWapp_img {
     width: 50px; }
 
@@ -10766,6 +10781,79 @@ a {
       @media (max-width: 572px) {
         .product_container_cintaaisladora-mod_infoContainer_description ul li {
           font-size: 14px; } }
+
+.pdf {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 120px; }
+  @media (max-width: 572px) {
+    .pdf {
+      margin-top: 80px; } }
+  @media (min-width: 572px) and (max-width: 992px) {
+    .pdf {
+      margin-top: 100px; } }
+  .pdf_container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    flex-wrap: wrap; }
+    @media (max-width: 572px) {
+      .pdf_container {
+        width: 90%; } }
+    @media (min-width: 572px) and (max-width: 992px) {
+      .pdf_container {
+        width: 85%; } }
+    .pdf_container_card {
+      width: 40%;
+      max-width: 320px;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease; }
+      @media (max-width: 572px) {
+        .pdf_container_card {
+          width: 90%; } }
+      @media (min-width: 572px) and (max-width: 992px) {
+        .pdf_container_card {
+          width: 42%; } }
+      @media (min-width: 992px) {
+        .pdf_container_card:hover {
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          transform: translateY(-3%); } }
+      .pdf_container_card img {
+        width: 80%;
+        height: auto; }
+      .pdf_container_card .contenido {
+        padding: 15px;
+        text-align: center; }
+        .pdf_container_card .contenido p {
+          line-height: 1.5;
+          min-height: 50px;
+          color: #6a6a6a; }
+        .pdf_container_card .contenido h3, .pdf_container_card .contenido .h3 {
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin-bottom: 15px; }
+        .pdf_container_card .contenido a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: #2b2b2b;
+          border: 2px solid #a0a0a0;
+          border-radius: 4px; }
+          @media (min-width: 992px) {
+            .pdf_container_card .contenido a:hover {
+              background-color: #a0a0a0;
+              color: white; } }
 
 .main-contacto {
   margin-top: 120px;

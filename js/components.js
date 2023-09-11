@@ -58,6 +58,13 @@ let header = `
             <li>
               <a
                 class="dropdown-item fw-normal bg-none drop-items"
+                href="./tornillos.html"
+                >Tornillos</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item fw-normal bg-none drop-items"
                 href="./precintos.html"
                 >Precintos</a
               >
@@ -105,6 +112,14 @@ let header = `
               >
             </li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active nav_boton_animame ms-2"
+            aria-current="page"
+            href="./descargas.html"
+            >Descargas</a
+          >
         </li>
         <li class="nav-item">
           <a

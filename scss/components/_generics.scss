@@ -19,9 +19,24 @@
   }
   
   .fixedWapp {
+    @media (max-width: 572px){
+      right: 20px;
+      bottom: 20px;
+    }
+    @media (min-width: 573px) and (max-width: 992px){
+      right: 40px;
+      bottom: 40px;
+    }
+    @media (min-width: 993px) and (max-width: 1306px){
+      right: 50px;
+      bottom: 50px;
+    }
+    @media (min-width: 1307px){
+      right: 50px;
+      bottom: 50px;
+    }
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
     z-index: 1;
     &_img {
       width: 50px;
