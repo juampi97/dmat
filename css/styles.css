@@ -10782,6 +10782,238 @@ a {
         .product_container_cintaaisladora-mod_infoContainer_description ul li {
           font-size: 14px; } }
 
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_tornillo1 {
+    margin-top: 290px;
+    height: 300px; } }
+
+@media (min-width: 992px) {
+  .product_container_tornillo1 {
+    height: 350px; } }
+
+.product_container_tornillo1_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo1_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_tornillo1_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo1_infoContainer {
+      margin-top: 10px; } }
+  .product_container_tornillo1_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo1_infoContainer_title {
+        height: 44px; } }
+    .product_container_tornillo1_infoContainer_title h1, .product_container_tornillo1_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_tornillo1_infoContainer_title h1, .product_container_tornillo1_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_tornillo1_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo1_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_tornillo2 {
+    margin-top: 430px;
+    height: 290px; } }
+
+@media (min-width: 992px) {
+  .product_container_tornillo2 {
+    height: 480px; } }
+
+.product_container_tornillo2_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo2_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_tornillo2_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo2_infoContainer {
+      margin-top: 10px; } }
+  .product_container_tornillo2_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo2_infoContainer_title {
+        height: 44px; } }
+    .product_container_tornillo2_infoContainer_title h1, .product_container_tornillo2_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_tornillo2_infoContainer_title h1, .product_container_tornillo2_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_tornillo2_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo2_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_tornillo3 {
+    margin-top: 390px;
+    height: 290px; } }
+
+@media (min-width: 992px) {
+  .product_container_tornillo3 {
+    height: 430px; } }
+
+.product_container_tornillo3_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo3_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_tornillo3_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo3_infoContainer {
+      margin-top: 10px; } }
+  .product_container_tornillo3_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo3_infoContainer_title {
+        height: 44px; } }
+    .product_container_tornillo3_infoContainer_title h1, .product_container_tornillo3_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_tornillo3_infoContainer_title h1, .product_container_tornillo3_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_tornillo3_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo3_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (max-width: 572px) {
+  .product_container_tornillo4 {
+    margin-top: 10px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_tornillo4 {
+    margin-top: 370px;
+    height: 290px; } }
+
+@media (min-width: 992px) {
+  .product_container_tornillo4 {
+    height: 410px; } }
+
+.product_container_tornillo4_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo4_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_tornillo4_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo4_infoContainer {
+      margin-top: 10px; } }
+  .product_container_tornillo4_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo4_infoContainer_title {
+        height: 44px; } }
+    .product_container_tornillo4_infoContainer_title h1, .product_container_tornillo4_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_tornillo4_infoContainer_title h1, .product_container_tornillo4_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_tornillo4_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo4_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_tornillo5 {
+    margin-top: 340px;
+    height: 290px; } }
+
+@media (min-width: 992px) {
+  .product_container_tornillo5 {
+    height: 400px; } }
+
+.product_container_tornillo5_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo5_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_tornillo5_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo5_infoContainer {
+      margin-top: 10px; } }
+  .product_container_tornillo5_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo5_infoContainer_title {
+        height: 44px; } }
+    .product_container_tornillo5_infoContainer_title h1, .product_container_tornillo5_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_tornillo5_infoContainer_title h1, .product_container_tornillo5_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_tornillo5_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo5_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_tornillo6 {
+    margin-top: 310px;
+    height: 290px; } }
+
+@media (min-width: 992px) {
+  .product_container_tornillo6 {
+    height: 320px; } }
+
+.product_container_tornillo6_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo6_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_tornillo6_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_tornillo6_infoContainer {
+      margin-top: 10px; } }
+  .product_container_tornillo6_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo6_infoContainer_title {
+        height: 44px; } }
+    .product_container_tornillo6_infoContainer_title h1, .product_container_tornillo6_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_tornillo6_infoContainer_title h1, .product_container_tornillo6_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_tornillo6_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_tornillo6_infoContainer_description ul li {
+        font-size: 14px; } }
+
 .pdf {
   width: 100%;
   min-height: 70vh;
