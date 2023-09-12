@@ -48,6 +48,59 @@
     }
   }
 }
+
+.product_container_304 {
+  @media (max-width: 572px) {
+    // margin-top: 150px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 220px;
+    height: 300px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 100px;
+    height: 150px;
+  }
+  // margin-top: 60px;
+  // height: 350px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
 .product_container_grampas {
   @media (max-width: 572px) {
     // margin-top: 10px;
@@ -697,6 +750,56 @@
   }
 }
 
+.product_container_precintosplasticos_304 {
+  @media (max-width: 572px) {
+    margin-top: 280px;
+    height: 400px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 80px;
+    height: 570px;
+  }
+  margin-top: 40px;
+  margin-bottom: 60px;
+  height: 570px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
 .product_container_plasticocorteautomatico {
   @media (max-width: 572px) {
     height: 450px;
@@ -1243,6 +1346,57 @@
   }
   @media (min-width: 992px) {
     height: 320px;
+  }
+  // margin-top: 60px;
+  // height: 350px;
+  &_imagenContainer {
+    &_img {
+      @media (max-width: 572px) {
+        width: 190px;
+      }
+      width: 250px;
+    }
+  }
+  &_infoContainer {
+    @media (max-width: 572px) {
+      margin-top: 10px;
+    }
+    margin-top: 10px;
+    &_title {
+      @media (max-width: 572px) {
+        height: 44px;
+      }
+      height: 60px;
+      & h1 {
+        @media (max-width: 572px) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    &_description {
+      margin-top: 30px;
+      & ul li {
+        @media (max-width: 572px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.product_container_escape {
+  @media (max-width: 572px) {
+    // margin-top: 10px;
+  }
+  @media (min-width: 572px) and (max-width: 992px) {
+    margin-top: 210px;
+    height: 290px;
+  }
+  @media (min-width: 992px) {
+    height: 300px;
   }
   // margin-top: 60px;
   // height: 350px;

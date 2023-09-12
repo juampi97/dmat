@@ -10066,6 +10066,45 @@ a {
       .product_container_infoContainer_description ul li {
         font-size: 14px; } }
 
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_304 {
+    margin-top: 220px;
+    height: 300px; } }
+
+@media (min-width: 992px) {
+  .product_container_304 {
+    margin-top: 100px;
+    height: 150px; } }
+
+.product_container_304_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_304_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_304_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_304_infoContainer {
+      margin-top: 10px; } }
+  .product_container_304_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_304_infoContainer_title {
+        height: 44px; } }
+    .product_container_304_infoContainer_title h1, .product_container_304_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_304_infoContainer_title h1, .product_container_304_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_304_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_304_infoContainer_description ul li {
+        font-size: 14px; } }
+
 .product_container_grampas {
   height: 400px; }
   @media (max-width: 572px) {
@@ -10561,6 +10600,46 @@ a {
         .product_container_precintosplasticos_infoContainer_description ul li {
           font-size: 14px; } }
 
+.product_container_precintosplasticos_304 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  height: 570px; }
+  @media (max-width: 572px) {
+    .product_container_precintosplasticos_304 {
+      margin-top: 280px;
+      height: 400px; } }
+  @media (min-width: 572px) and (max-width: 992px) {
+    .product_container_precintosplasticos_304 {
+      margin-top: 80px;
+      height: 570px; } }
+  .product_container_precintosplasticos_304_imagenContainer_img {
+    width: 250px; }
+    @media (max-width: 572px) {
+      .product_container_precintosplasticos_304_imagenContainer_img {
+        width: 190px; } }
+  .product_container_precintosplasticos_304_infoContainer {
+    margin-top: 10px; }
+    @media (max-width: 572px) {
+      .product_container_precintosplasticos_304_infoContainer {
+        margin-top: 10px; } }
+    .product_container_precintosplasticos_304_infoContainer_title {
+      height: 60px; }
+      @media (max-width: 572px) {
+        .product_container_precintosplasticos_304_infoContainer_title {
+          height: 44px; } }
+      .product_container_precintosplasticos_304_infoContainer_title h1, .product_container_precintosplasticos_304_infoContainer_title .h1 {
+        font-size: 30px;
+        font-weight: 500; }
+        @media (max-width: 572px) {
+          .product_container_precintosplasticos_304_infoContainer_title h1, .product_container_precintosplasticos_304_infoContainer_title .h1 {
+            font-size: 20px;
+            font-weight: 500; } }
+    .product_container_precintosplasticos_304_infoContainer_description {
+      margin-top: 30px; }
+      @media (max-width: 572px) {
+        .product_container_precintosplasticos_304_infoContainer_description ul li {
+          font-size: 14px; } }
+
 .product_container_plasticocorteautomatico {
   height: 500px;
   margin-bottom: 120px; }
@@ -11012,6 +11091,44 @@ a {
     margin-top: 30px; }
     @media (max-width: 572px) {
       .product_container_tornillo6_infoContainer_description ul li {
+        font-size: 14px; } }
+
+@media (min-width: 572px) and (max-width: 992px) {
+  .product_container_escape {
+    margin-top: 210px;
+    height: 290px; } }
+
+@media (min-width: 992px) {
+  .product_container_escape {
+    height: 300px; } }
+
+.product_container_escape_imagenContainer_img {
+  width: 250px; }
+  @media (max-width: 572px) {
+    .product_container_escape_imagenContainer_img {
+      width: 190px; } }
+
+.product_container_escape_infoContainer {
+  margin-top: 10px; }
+  @media (max-width: 572px) {
+    .product_container_escape_infoContainer {
+      margin-top: 10px; } }
+  .product_container_escape_infoContainer_title {
+    height: 60px; }
+    @media (max-width: 572px) {
+      .product_container_escape_infoContainer_title {
+        height: 44px; } }
+    .product_container_escape_infoContainer_title h1, .product_container_escape_infoContainer_title .h1 {
+      font-size: 30px;
+      font-weight: 500; }
+      @media (max-width: 572px) {
+        .product_container_escape_infoContainer_title h1, .product_container_escape_infoContainer_title .h1 {
+          font-size: 20px;
+          font-weight: 500; } }
+  .product_container_escape_infoContainer_description {
+    margin-top: 30px; }
+    @media (max-width: 572px) {
+      .product_container_escape_infoContainer_description ul li {
         font-size: 14px; } }
 
 .pdf {
