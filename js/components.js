@@ -159,7 +159,7 @@ let header = `
 </header>
 <!-- Inicio boton_fixed_botonTop  -->
 <div class="fixedWapp">
-  <a href="#top"
+  <a target="_blank" href="https://wa.me/541162102695"
     ><img
       src="./img/wapp.png"
       alt="LogoWapp"
