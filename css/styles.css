@@ -10601,16 +10601,16 @@ a {
           font-size: 14px; } }
 
 .product_container_precintosplasticos_304 {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 60px;
   height: 570px; }
   @media (max-width: 572px) {
     .product_container_precintosplasticos_304 {
-      margin-top: 280px;
+      margin-top: 220px;
       height: 400px; } }
   @media (min-width: 572px) and (max-width: 992px) {
     .product_container_precintosplasticos_304 {
-      margin-top: 80px;
+      margin-top: 60px;
       height: 570px; } }
   .product_container_precintosplasticos_304_imagenContainer_img {
     width: 250px; }
