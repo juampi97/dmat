@@ -159,7 +159,7 @@ let header = `
 </header>
 <!-- Inicio boton_fixed_botonTop  -->
 <div class="fixedWapp">
-  <a target="_blank" href="https://wa.me/541162102695"
+  <a target="_blank" href="https://wa.me/541168297869"
     ><img
       src="./img/wapp.png"
       alt="LogoWapp"
@@ -196,9 +196,9 @@ let footer = `
     <!-- <p class="text-blanco my-1 my-lg-2 text-center">Telefono</p> -->
     <p class="text-blanco my-1 my-lg-2 text-center">(5411) 4918-8349</p>
     <a
-      href="mailto: damat@dmat.com.ar"
+      href="mailto: ventas@dmat.com.ar"
       class="text-blanco my-1 my-lg-3 text-center"
-      >Mail: damat@dmat.com.ar</a
+      >Mail: ventas@dmat.com.ar</a
     >
   </div>
   <div

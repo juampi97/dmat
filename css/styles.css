@@ -9843,8 +9843,7 @@ a {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
   .main-index .carousel-item:before {
     content: "";
     position: absolute;
