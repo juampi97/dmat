@@ -21,6 +21,8 @@
     ></script>
     <!-- Scripts -->
     <script src="./js/components.js"></script>
+    <!-- Scrpt captcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -87,7 +89,7 @@
         <h2>CONTACTO</h2>
       </div>
       <div class="col-10 col-lg-5 mb-2">
-        <form action="">
+        <form id="contactForm" action="mail_mod.php" method="POST">
           <div class="form-floating mt-2 mb-3">
             <input
               type="text"
@@ -97,6 +99,56 @@
               placeholder="Nombre"
             />
             <label for="floatingPassword">Nombre y Apellido</label>
+          </div>
+          <div class="form-floating mt-2 mb-3">
+            <input
+              type="text"
+              name="empresa"
+              class="form-control"
+              id="formEmpresa"
+              placeholder="Empresa"
+            />
+            <label for="floatingPassword">Empresa</label>
+          </div>
+          <div class="form-floating mt-2 mb-3">
+            <input
+              type="text"
+              name="provincia"
+              class="form-control"
+              id="formProvincia"
+              placeholder="Provincia"
+            />
+            <label for="floatingPassword">Provincia</label>
+          </div>
+          <div class="form-floating mt-2 mb-3">
+            <input
+              type="text"
+              name="localidad"
+              class="form-control"
+              id="formLocalidad"
+              placeholder="Localidad"
+            />
+            <label for="floatingPassword">Localidad</label>
+          </div>
+          <div class="form-floating mt-2 mb-3">
+            <input
+              type="text"
+              name="direccion"
+              class="form-control"
+              id="formDireccion"
+              placeholder="Dirección"
+            />
+            <label for="floatingPassword">Dirección</label>
+          </div>
+          <div class="form-floating mt-2 mb-3">
+            <input
+              type="text"
+              name="telefono"
+              class="form-control"
+              id="formTelefono"
+              placeholder="Teléfono"
+            />
+            <label for="floatingPassword">Teléfono</label>
           </div>
           <div class="form-floating mb-3">
             <input
@@ -109,6 +161,36 @@
             <label for="floatingInput">Email</label>
           </div>
           <div class="form-floating mb-3">
+            <input
+              type="text"
+              name="codigo"
+              class="form-control"
+              id="formCodigo"
+              placeholder="Código"
+            />
+            <label for="floatingInput">Código</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              name="producto"
+              class="form-control"
+              id="formProducto"
+              placeholder="Producto"
+            />
+            <label for="floatingInput">Producto</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              name="vendedor"
+              class="form-control"
+              id="formVendedor"
+              placeholder="Vendedor"
+            />
+            <label for="floatingInput">Vendedor</label>
+          </div>
+          <div class="form-floating mb-3">
             <textarea
               class="form-control"
               name="Mensaje"
@@ -118,8 +200,11 @@
             ></textarea>
             <label for="floatingTextarea2">Mensaje</label>
           </div>
+          <div class="col-12 d-flex justify-content-start align-items-center mb-3">
+            <div class="g-recaptcha" data-sitekey="6LdzpagoAAAAAKuGijIl0IVJNKal_tkMj5XvR89w"></div>
+          </div>
           <div class="col-12 d-flex justify-content-around align-items-center">
-            <button type="button" class="btn btn-secondary">Enviar</button>
+            <button type="submit" name="submit" class="btn btn-secondary">Enviar</button>
           </div>
         </form>
       </div>
