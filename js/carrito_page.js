@@ -7,14 +7,41 @@ const init_load_Carrito = () => {
   return carrito;
 };
 
-const eliminarItem = (producto, banda, min, max) => {
+const eliminarItem = (event) => {
+  carrito = JSON.parse(localStorage.getItem("carrito"));
+
+  let find_item = false;
+  let index_item = false;
+  let index = 0;
+
+  let variables = event.target.id
+  variables = variables.split(",")
+  console.log(variables);
+
+  carrito.forEach((element) => {
+    if (
+      element.producto == variables[0] &&
+      element.banda == variables[1] &&
+      element.min == variables[2] &&
+      element.max == variables[3]
+    ) {
+      find_item = true;
+      index_item = index;
+    } else {
+      index++;
+    }
+  });
+
+  carrito.splice(index_item, 1);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+
   location.reload()
 };
 
 const vaciarCarrito = () => {
   let carritoVacio = [];
   localStorage.setItem("carrito", JSON.stringify(carritoVacio));
-  location.reload()
+  location.reload();
 };
 
 const carritoVacio = `<div class="alert alert-secondary text-center" role="alert">No hay elementos en el carrito.</div>`;
@@ -38,7 +65,7 @@ window.addEventListener("load", function (event) {
         <p class="mb-1">Cantidad: ${elemento.cantidad}</p>
       </div>
       <div class="d-flex m-4 justify-content-center">
-        <button onClick="eliminarItem(${elemento.producto},${elemento.banda},${elemento.min},${elemento.max})" type="button" class="btn btn-danger py-1 btnEliminar" id="btnEliminar">x</button>
+        <button onClick="eliminarItem(event)" type="button" class="btn btn-danger py-1 btnEliminar" id="${elemento.producto},${elemento.banda},${elemento.min},${elemento.max}">x</button>
       </div>
       <span class="badge bg-primary rounded-pill d-none">14</span>
     </li>
