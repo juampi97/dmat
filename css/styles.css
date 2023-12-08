@@ -11248,5 +11248,5 @@ a {
 
 .main-carrito {
   width: 100vw;
-  height: 90vh;
+  min-height: 90vh;
   background: white; }
