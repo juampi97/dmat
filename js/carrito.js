@@ -75,6 +75,11 @@ const addtocart = (event, producto) => {
   } 
 
   updateCart(item)
+  
+  Swal.fire({
+    text: "Producto agregado correctamente.",
+    icon: "success"
+  });
 }
 
 window.addEventListener("load", function (event) {
