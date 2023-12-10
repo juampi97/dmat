@@ -44,14 +44,18 @@ const register = () => {
   let email = document.querySelector("#email").value;
   let password = document.querySelector("#password").value;
   let confirmPassword = document.querySelector("#confirmPassword").value;
+  let nombre = document.querySelector("#nombre").value;
+  let apellido = document.querySelector("#apellido").value;
   let cuit = document.querySelector("#cuit").value;
   let empresa = document.querySelector("#empresa").value;
 
-  if (validateEmail(email) && password == confirmPassword) {
+  if (validateEmail(email) && (password == confirmPassword) && (password.length > 0) && (nombre.length > 0) && (apellido.length > 0)) {
     createUserWithEmailAndPassword(auth, email, password)
       .then((credentials) => {
         set(ref(database, "users/" + credentials.user.uid), {
           email: email,
+          nombre: nombre,
+          apellido: apellido,
           cuit: cuit,
           empresa: empresa,
           last_login: Date(),
@@ -61,6 +65,9 @@ const register = () => {
           text: "Usuario registrado exitosamente.",
           icon: "success",
         });
+        setTimeout(() => {
+          window.location.href = "./login.html"
+        }, 5000);
       })
       .catch(function (error) {
         let error_code = error.code;
@@ -81,15 +88,15 @@ const register = () => {
 const login = () => {
   let email = document.querySelector("#email").value;
   let password = document.querySelector("#password").value;
-  
+
   signInWithEmailAndPassword(auth, email, password)
     .then((credentials) => {
       update(ref(database, "users/" + credentials.user.uid), {
         last_login: Date(),
       });
       //Seteo cookie
-      setCookie("user", email, 1);
-      setCookie("uid", credentials.user.uid, 5);
+      setCookie("user",email,5)
+      setCookie("uid",credentials.user.uid,5)
     })
     .catch(function (error) {
       let error_code = error.code;
@@ -105,9 +112,9 @@ const logout = () => {
   signOut(auth)
     .then((credentials) => {
       // Limpio cookies
-      deleteCookie("user");
-      deleteCookie("uid");
-      location.reload();
+      deleteCookie("user")
+      deleteCookie("uid")
+      location.reload()
     })
     .catch((error) => {
       let error_code = error.code;
@@ -124,6 +131,7 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // User signed in
     const uid = user.uid;
+    console.log(uid);
   } else {
     // No user signed in
   }
@@ -131,18 +139,10 @@ onAuthStateChanged(auth, (user) => {
 
 // Manejo cookies
 function setCookie(cname, cvalue, exdays) {
-  let loginRememberCheck = document.querySelector("#loginRememberCheck")
-  if(loginRememberCheck.checked){
-    const d = new Date();
-    d.setTime(d.getTime() + 365* 10 * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  } else {
-    const d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function deleteCookie(cname) {
@@ -153,10 +153,10 @@ function deleteCookie(cname) {
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
     let c = ca[i];
-    while (c.charAt(0) == " ") {
+    while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
@@ -166,7 +166,5 @@ function getCookie(cname) {
   return "";
 }
 
-let buttonLogin = document.querySelector("#buttonLogin");
-buttonLogin.addEventListener("click", login);
-// let buttonLogout = document.querySelector("#buttonLogout");
-// buttonLogout.addEventListener("click", logout);
+let buttonRegister = document.querySelector("#buttonRegister");
+buttonRegister.addEventListener("click", register);
