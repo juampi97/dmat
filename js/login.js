@@ -90,6 +90,7 @@ const login = () => {
       //Seteo cookie
       setCookie("user", email, 1);
       setCookie("uid", credentials.user.uid, 5);
+      window.location.assign('./index.html');
     })
     .catch(function (error) {
       let error_code = error.code;
@@ -168,5 +169,3 @@ function getCookie(cname) {
 
 let buttonLogin = document.querySelector("#buttonLogin");
 buttonLogin.addEventListener("click", login);
-// let buttonLogout = document.querySelector("#buttonLogout");
-// buttonLogout.addEventListener("click", logout);

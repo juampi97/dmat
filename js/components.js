@@ -1,3 +1,38 @@
+// Firebase
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+import {
+  getDatabase,
+  set,
+  ref,
+  update,
+} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCx_0-rDUxatbdQHVZp0_13mo6kJ7HyWNk",
+  authDomain: "dmat-271c6.firebaseapp.com",
+  databaseURL: "https://dmat-271c6-default-rtdb.firebaseio.com",
+  projectId: "dmat-271c6",
+  storageBucket: "dmat-271c6.appspot.com",
+  messagingSenderId: "727891508383",
+  appId: "1:727891508383:web:48ee30e605f5d0dc5fb6aa",
+  measurementId: "G-GTRGQH794G",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const auth = getAuth(app);
+
+//Componentes
+
 let header = `
 <header class="header fixed-top">
 <nav class="navbar navbar-expand-lg bg-body-tertiary barra">
@@ -129,28 +164,63 @@ let header = `
             >Contacto</a
           >
         </li>
-      </ul>
-      <div class="ps-3">
-        <a href="./carrito.html">
-          <button
-            type="button"
-            id="btnCarrito"
-            class="btn btn-azul me-3 mb-2 w-auto h-auto mt-lg-1"
-            width="60"
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link active nav_boton_animame ms-2 me-2"
+            aria-current="page"
+            href="#"
+            >Mi cuenta</a
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              fill="currentColor"
-              class="bi bi-cart-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-              />
-            </svg>
-          </button>
+
+          <ul class="dropdown-menu bg-transparente">
+            <li class="" id="buttonLogin">
+              <a
+                class="dropdown-item fw-normal bg-none drop-items"
+                href="./login.html"
+                >Login</a
+              >
+            </li>
+            <li class="" id="buttonRegister">
+              <a
+                class="dropdown-item fw-normal bg-none drop-items"
+                href="./register.html"
+                >Registrarse</a
+              >
+            </li>
+            <li class="" id="buttonDatosCuenta">
+              <a
+                class="dropdown-item fw-normal bg-none drop-items"
+                href="./datos_cuenta.html"
+                >Mis datos</a
+              >
+            </li>
+            <li class="" id="buttonPedidosCuenta">
+              <a
+                class="dropdown-item fw-normal bg-none drop-items"
+                href="./pedidos_cuenta.html"
+                >Mis pedidos</a
+              >
+            </li>
+            <li class="" id="buttonLogout">
+              <a
+                class="dropdown-item fw-normal bg-none drop-items"
+                href="./#"
+                >Cerrar Sesión</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="ps-2">
+        <a href="./carrito.html">
+          <button type="button" class="btn btn-azul me-3 mb-2 w-auto h-auto mt-lg-1 position-relative">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+          </svg>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" id="contadorArticulos">
+            <span class="visually-hidden">unread messages</span>
+          </span>
+          </button>          
         </a>
       </div>
       <div class="ps-1">
@@ -162,10 +232,6 @@ let header = `
             width="60"
           >
             Tienda Nube
-              <path
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-              />
-            </svg>
           </button>
         </a>
       </div>
@@ -183,7 +249,7 @@ let header = `
   /></a>
 </div>
 <!-- Fin boton_fixed_botonTop  -->
-`
+`;
 
 let footer = `
 <footer class="bg-azul pt-3 pt-lg-3">
@@ -244,18 +310,113 @@ let footer = `
   </p>
 </div>
 </footer>
-`
+`;
 
-// let wapp_logo = ``
+// Acciones al cargar la pagina
 
 window.onload = function () {
-  const nav = document.querySelector('#nav');
-  const pie = document.querySelector('#pie');  
-  // const logo_wapp = document.querySelector('#logo_wapp');
+  // Componentes genericos
 
-  nav.innerHTML = header;  
+  const nav = document.querySelector("#nav");
+  const pie = document.querySelector("#pie");
+
+  nav.innerHTML = header;
   pie.innerHTML = footer;
-  // logo_wapp.innerHTML = wapp_logo;
+
+  // Manejo inicio sesion
+
+  const cookieUser = getCookie("user");
+  const cookieUid = getCookie("uid");
+
+  const buttonLogin = document.querySelector("#buttonLogin");
+  const buttonRegister = document.querySelector("#buttonRegister");
+  const buttonDatosCuenta = document.querySelector("#buttonDatosCuenta");
+  const buttonPedidosCuenta = document.querySelector("#buttonPedidosCuenta");
+  const buttonLogout = document.querySelector("#buttonLogout");
+
+  if (cookieUser.length > 0 && cookieUid.length > 0) {
+    buttonLogin.classList.add("d-none");
+    buttonRegister.classList.add("d-none");
+    buttonDatosCuenta.classList.remove("d-none");
+    buttonPedidosCuenta.classList.remove("d-none");
+    buttonLogout.classList.remove("d-none");
+  } else {
+    buttonLogin.classList.remove("d-none");
+    buttonRegister.classList.remove("d-none");
+    buttonDatosCuenta.classList.add("d-none");
+    buttonPedidosCuenta.classList.add("d-none");
+    buttonLogout.classList.add("d-none");
+  }
+
+  // Manejo contador de articulos
+
+  const contadorArticulos = document.querySelector("#contadorArticulos");
+  let carrito = JSON.parse(localStorage.getItem("carrito"));
+  if (carrito.length > 0) {
+    contadorArticulos.classList.remove("d-none");
+    contadorArticulos.innerHTML = `+${carrito.length}`;
+  } else {
+    contadorArticulos.classList.add("d-none");
+  }
+
+  // Logout
+  let botonLogout = document.querySelector("#buttonLogout");
+  botonLogout.addEventListener("click", logout);
+};
+
+//
+
+// Funciones
+
+
+function setCookie(cname, cvalue, exdays) {
+  let loginRememberCheck = document.querySelector("#loginRememberCheck")
+  if(loginRememberCheck.checked){
+    const d = new Date();
+    d.setTime(d.getTime() + 365* 10 * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  } else {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+}
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+function deleteCookie(cname) {
+  let expires = "expires=expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  document.cookie = cname + "=;" + expires + ";path=/";
 }
 
-
+function logout() {
+  signOut(auth)
+    .then((credentials) => {
+      // Limpio cookies
+      deleteCookie("user");
+      deleteCookie("uid");
+      location.reload();
+    })
+    .catch((error) => {
+      let error_code = error.code;
+      let error_mensaje = error.message;
+      Swal.fire({
+        text: `Error ${error_code} - ${error_mensaje}`,
+        icon: "error",
+      });
+    });
+};

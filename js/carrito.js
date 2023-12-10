@@ -30,9 +30,9 @@ const updateCart = (item) => {
     carrito = [...carrito,item]
   }
   
-  console.log(carrito);
-
   localStorage.setItem("carrito", JSON.stringify(carrito));
+
+  location.reload()
 }
 
 const addtocart = (event, producto) => {
