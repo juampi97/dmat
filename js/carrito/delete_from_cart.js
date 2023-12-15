@@ -1,38 +1,5 @@
-// Funciones
+// Auth firebase
 
-function setCookie(cname, cvalue, exdays) {
-  let loginRememberCheck = document.querySelector("#loginRememberCheck");
-  if (loginRememberCheck.checked) {
-    const d = new Date();
-    d.setTime(d.getTime() + 365 * 10 * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  } else {
-    const d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-}
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-function deleteCookie(cname) {
-  let expires = "expires=expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  document.cookie = cname + "=;" + expires + ";path=/";
-}
 function logout() {
   signOut(auth)
     .then((credentials) => {
@@ -50,14 +17,18 @@ function logout() {
       });
     });
 }
+
+// Manejo carrito
+
 const init_load_Carrito = () => {
   if (localStorage.getItem("carrito") == undefined) {
     let carritoVacio = [];
     localStorage.setItem("carrito", JSON.stringify(carritoVacio));
   }
-  carrito = JSON.parse(localStorage.getItem("carrito"));
+  let carrito = JSON.parse(localStorage.getItem("carrito"));
   return carrito;
 };
+
 const eliminarItem = (event) => {
   carrito = JSON.parse(localStorage.getItem("carrito"));
 
@@ -96,10 +67,47 @@ const vaciarCarrito = () => {
 };
 const carritoVacio = `<div class="alert alert-secondary text-center" role="alert">No hay elementos en el carrito.</div>`;
 
+// Manejo cookies
+function setCookie(cname, cvalue, exdays) {
+  let loginRememberCheck = document.querySelector("#loginRememberCheck");
+  if (loginRememberCheck.checked) {
+    const d = new Date();
+    d.setTime(d.getTime() + 365 * 10 * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  } else {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+}
+
+function deleteCookie(cname) {
+  let expires = "expires=expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  document.cookie = cname + "=;" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 window.addEventListener("load", function (event) {
   const listadoCarrito = document.querySelector("#carrito_section");
 
-  carrito = init_load_Carrito();
+  let carrito = init_load_Carrito()
 
   if (carrito.length == 0) {
     listadoCarrito.innerHTML = carritoVacio;

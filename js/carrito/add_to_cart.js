@@ -1,3 +1,5 @@
+// Manejo carrito
+
 const init_load_Carrito = () => {
   if (localStorage.getItem("carrito") == undefined) {
     let carritoVacio = [];

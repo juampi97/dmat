@@ -56,13 +56,16 @@ const runCaptcha = () => {
       .then(function (token) {
         // Add your logic to submit to your backend server here.
         const captcha = token;
-        postData(captcha);
+        getData(captcha)
+        // postData(captcha);
       });
   });
 };
 
 const getData = (captcha) => {
   const user = getCookie("user");
+  const uid = getCookie("uid");
+  console.log(user, uid);
   carrito = load_Carrito();
   datosProcesados = {
     usuario: user,
