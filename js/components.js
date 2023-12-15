@@ -250,7 +250,6 @@ let header = `
 </div>
 <!-- Fin boton_fixed_botonTop  -->
 `;
-
 let footer = `
 <footer class="bg-azul pt-3 pt-lg-3">
 <div
@@ -368,7 +367,6 @@ window.onload = function () {
 
 // Funciones
 
-
 function setCookie(cname, cvalue, exdays) {
   let loginRememberCheck = document.querySelector("#loginRememberCheck")
   if(loginRememberCheck.checked){
@@ -402,7 +400,6 @@ function deleteCookie(cname) {
   let expires = "expires=expires=Thu, 01 Jan 1970 00:00:00 GMT";
   document.cookie = cname + "=;" + expires + ";path=/";
 }
-
 function logout() {
   signOut(auth)
     .then((credentials) => {
@@ -420,3 +417,12 @@ function logout() {
       });
     });
 };
+const user = auth.currentUser;
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User signed in
+    const uid = user.uid;
+  } else {
+    // No user signed in
+  }
+});

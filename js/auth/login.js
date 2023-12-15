@@ -125,8 +125,10 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // User signed in
     const uid = user.uid;
+    console.log(`Hola ${user}`)
   } else {
     // No user signed in
+    console.log('Adios')
   }
 });
 
