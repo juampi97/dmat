@@ -1,35 +1,9 @@
-// Firebase
-
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
 import {
-  getDatabase,
-  set,
-  ref,
-  update,
-} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
 } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyCx_0-rDUxatbdQHVZp0_13mo6kJ7HyWNk",
-  authDomain: "dmat-271c6.firebaseapp.com",
-  databaseURL: "https://dmat-271c6-default-rtdb.firebaseio.com",
-  projectId: "dmat-271c6",
-  storageBucket: "dmat-271c6.appspot.com",
-  messagingSenderId: "727891508383",
-  appId: "1:727891508383:web:48ee30e605f5d0dc5fb6aa",
-  measurementId: "G-GTRGQH794G",
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-const auth = getAuth(app);
+import { app, database, auth } from './firebase/setup_firebase.js'
+import { getCookie, setCookie, deleteCookie } from './functions.js'
 
 //Componentes
 
@@ -363,43 +337,7 @@ window.onload = function () {
   botonLogout.addEventListener("click", logout);
 };
 
-//
-
 // Funciones
-
-function setCookie(cname, cvalue, exdays) {
-  let loginRememberCheck = document.querySelector("#loginRememberCheck")
-  if(loginRememberCheck.checked){
-    const d = new Date();
-    d.setTime(d.getTime() + 365* 10 * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  } else {
-    const d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-}
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-function deleteCookie(cname) {
-  let expires = "expires=expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  document.cookie = cname + "=;" + expires + ";path=/";
-}
 function logout() {
   signOut(auth)
     .then((credentials) => {

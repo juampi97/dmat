@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
   }
 });
 
-// Funciones
+// Funciones cookies
 
 function getCookie(cname) {
   let name = cname + "=";
@@ -39,10 +39,14 @@ function getCookie(cname) {
   return "";
 }
 
+// Funciones carrito
+
 const load_Carrito = () => {
   carrito = JSON.parse(localStorage.getItem("carrito"));
   return carrito;
 };
+
+// Funciones generar mail
 
 const runVerify = (e) => {
   e.preventDefault();

@@ -1,3 +1,9 @@
+window.addEventListener("load", function (event) {
+  // Inicializo y cargo el carrito al cargar la ventana
+  carrito = init_load_Carrito()
+  carrito = JSON.parse(localStorage.getItem("carrito"));
+});
+
 // Manejo carrito
 
 const init_load_Carrito = () => {
@@ -83,9 +89,3 @@ const addtocart = (event, producto) => {
     icon: "success"
   });
 }
-
-window.addEventListener("load", function (event) {
-  // Inicializo y cargo el carrito al cargar la ventana
-  carrito = init_load_Carrito()
-  carrito = JSON.parse(localStorage.getItem("carrito"));
-});
