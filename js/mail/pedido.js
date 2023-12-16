@@ -1,3 +1,5 @@
+import { nuevaCotizacion } from "../firebase/crud_firebase.js";
+
 let productionMailRoute = "https://mail-dmat.onrender.com/pedido";
 let devMailRoute = "http://localhost:8080/pedido";
 let enviroment = "prod"; // prod || dev
@@ -14,9 +16,9 @@ switch (enviroment) {
 
 window.addEventListener("load", () => {
   const user = getCookie("user");
-  carrito = load_Carrito();
+  let carrito = load_Carrito();
   if (user.length > 0 && carrito.length > 0) {
-    btnFinalizarPedido = document.querySelector("#btnFinalizarPedido");
+    let btnFinalizarPedido = document.querySelector("#btnFinalizarPedido");
     btnFinalizarPedido.addEventListener("click", runVerify);
   }
 });
@@ -42,7 +44,7 @@ function getCookie(cname) {
 // Funciones carrito
 
 const load_Carrito = () => {
-  carrito = JSON.parse(localStorage.getItem("carrito"));
+  let carrito = JSON.parse(localStorage.getItem("carrito"));
   return carrito;
 };
 
@@ -61,7 +63,7 @@ const runCaptcha = () => {
         // Add your logic to submit to your backend server here.
         const captcha = token;
         getData(captcha)
-        // postData(captcha);
+        postData(captcha);
       });
   });
 };
@@ -70,8 +72,8 @@ const getData = (captcha) => {
   const user = getCookie("user");
   const uid = getCookie("uid");
   console.log(user, uid);
-  carrito = load_Carrito();
-  datosProcesados = {
+  let carrito = load_Carrito();
+  let datosProcesados = {
     usuario: user,
     listado_articulos: carrito,
     captcha: captcha,
@@ -92,6 +94,7 @@ const postData = async (captcha) => {
     })
       .then((res) => res.json())
       .then((data) => {
+        nuevaCotizacion()
         Swal.fire({
           text: `Mensaje: ${data.mensaje}`,
           icon: "success",

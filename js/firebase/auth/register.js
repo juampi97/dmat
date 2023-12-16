@@ -26,7 +26,6 @@ const register = () => {
           apellido: apellido,
           cuit: cuit,
           empresa: empresa,
-          last_login: Date(),
         });
 
         Swal.fire({
