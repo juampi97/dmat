@@ -168,13 +168,6 @@ let header = `
                 >Mis datos</a
               >
             </li>
-            <li class="" id="buttonPedidosCuenta">
-              <a
-                class="dropdown-item fw-normal bg-none drop-items"
-                href="./pedidos_cuenta.html"
-                >Mis pedidos</a
-              >
-            </li>
             <li class="" id="buttonLogout">
               <a
                 class="dropdown-item fw-normal bg-none drop-items"

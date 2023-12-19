@@ -21,8 +21,11 @@
     ></script>
     <!-- Scripts -->
     <script src="./js/components.js" type="module"></script>
-    <!-- Scrpt captcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./js/mail/contacto.js"></script>
+    <!-- Js recaptch -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf6lzApAAAAALlQ1HOfO6HwtwpnbR3YP7kRdge_"></script>
+    <!-- Js SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -89,7 +92,7 @@
         <h2>CONTACTO</h2>
       </div>
       <div class="col-10 col-lg-5 mb-2">
-        <form id="contactForm" action="mail_mod.php" method="POST">
+        <form id="contactForm" action="">
           <div class="form-floating mt-2 mb-3">
             <input
               type="text"
@@ -200,11 +203,10 @@
             ></textarea>
             <label for="floatingTextarea2">Mensaje</label>
           </div>
-          <div class="col-12 d-flex justify-content-start align-items-center mb-3">
-            <div class="g-recaptcha" data-sitekey="6LdzpagoAAAAAKuGijIl0IVJNKal_tkMj5XvR89w"></div>
-          </div>
           <div class="col-12 d-flex justify-content-around align-items-center">
-            <button type="submit" name="submit" class="btn btn-secondary">Enviar</button>
+            <button class="btn btn-secondary" id="buttonSend" type="submit">
+              Enviar
+            </button>  
           </div>
         </form>
       </div>

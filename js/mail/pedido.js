@@ -2,21 +2,10 @@ import {
   nuevaCotizacion,
   updatePedidosUsuarios,
 } from "../firebase/crud_firebase.js";
-import { app, database, auth } from "../firebase/setup_firebase.js";
-import {
-  getDatabase,
-  ref,
-  child,
-  onValue,
-  get,
-  set,
-  push,
-  update,
-} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 
 let productionMailRoute = "https://mail-dmat.onrender.com/pedido";
 let devMailRoute = "http://localhost:8080/pedido";
-let enviroment = "dev"; // prod || dev
+let enviroment = "prod"; // prod || dev
 let mailRoute = "";
 
 switch (enviroment) {
