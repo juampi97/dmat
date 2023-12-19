@@ -342,6 +342,10 @@ function logout() {
   signOut(auth)
     .then((credentials) => {
       // Limpio cookies
+      deleteCookie("nombre");
+      deleteCookie("email");
+      deleteCookie("empresa");
+      deleteCookie("cuit");
       deleteCookie("user");
       deleteCookie("uid");
       location.reload();

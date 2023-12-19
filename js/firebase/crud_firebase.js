@@ -25,15 +25,17 @@ export const getDataFromDatabase = (dbName) => {
 };
 
 export const nuevaCotizacion = () => {
+  const uidPedido = uuidv4()
   let carrito = JSON.parse(localStorage.getItem("carrito"));
+  
   let postData = {
-    uid: uuidv4(),
+    uid: uidPedido,
     productos: carrito,
   };
   set(ref(db, "pedidos/" + postData.uid), postData)
     .then(() => {
-      console.log(carrito);
-      updatePedidosUsuarios(postData.uid)
+      // console.log(carrito);
+      updatePedidosUsuarios(uidPedido,carrito)
     })
     .catch((error) => {
       // The write failed...
@@ -41,10 +43,9 @@ export const nuevaCotizacion = () => {
     });
 };
 
-export const updatePedidosUsuarios = (uidPedido) => {
-  const userCookie = getCookie("user");
+export const updatePedidosUsuarios = (uidPedido, carrito) => {
   const uidCookie = getCookie("uid");
-
+  
   const dbRef = ref(db);
   get(child(dbRef, `users/${uidCookie}`))
     .then((snapshot) => {
@@ -53,10 +54,10 @@ export const updatePedidosUsuarios = (uidPedido) => {
         if (!user.hasOwnProperty("pedidos")) {
           user.pedidos = [uidPedido];
         } else {
-          user.pedidos = [...user.pedidos, uidPedido];
+          user.pedidos.push(uidPedido);
         }
         //
-        console.log(user);
+        // console.log(user);
         set(ref(db, `users/${uidCookie}`), {
           email: user.email,
           nombre: user.nombre,
@@ -67,7 +68,13 @@ export const updatePedidosUsuarios = (uidPedido) => {
         })
           .then(() => {
             // Data saved successfully!
-            console.log(true);
+            set(ref(db, `pedidos/${uidPedido}`), {
+              uid: uidPedido,
+              items: carrito
+            })
+              .then(() => {
+                console.log(true);
+              })
           })
           .catch((error) => {
             console.log(error);
@@ -81,11 +88,3 @@ export const updatePedidosUsuarios = (uidPedido) => {
       console.error(error);
     });
 };
-
-window.addEventListener("load", () => {
-  let users = getDataFromDatabase("users");
-  let pedidos = getDataFromDatabase("pedidos");
-  updatePedidosUsuarios();
-  // nuevaCotizacion()
-  // console.log(pedidos)
-});
