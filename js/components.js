@@ -168,6 +168,7 @@ let header = `
                 >Mis datos</a
               >
             </li>
+
             <li class="" id="buttonLogout">
               <a
                 class="dropdown-item fw-normal bg-none drop-items"
@@ -187,7 +188,7 @@ let header = `
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary" id="contadorArticulos">
             <span class="visually-hidden">unread messages</span>
           </span>
-          </button>          
+          </button>
         </a>
       </div>
       <div class="ps-1">
@@ -297,20 +298,20 @@ window.onload = function () {
   const buttonLogin = document.querySelector("#buttonLogin");
   const buttonRegister = document.querySelector("#buttonRegister");
   const buttonDatosCuenta = document.querySelector("#buttonDatosCuenta");
-  const buttonPedidosCuenta = document.querySelector("#buttonPedidosCuenta");
+  // const buttonPedidosCuenta = document.querySelector("#buttonPedidosCuenta");
   const buttonLogout = document.querySelector("#buttonLogout");
 
   if (cookieUser.length > 0 && cookieUid.length > 0) {
     buttonLogin.classList.add("d-none");
     buttonRegister.classList.add("d-none");
     buttonDatosCuenta.classList.remove("d-none");
-    buttonPedidosCuenta.classList.remove("d-none");
+    // buttonPedidosCuenta.classList.remove("d-none");
     buttonLogout.classList.remove("d-none");
   } else {
     buttonLogin.classList.remove("d-none");
     buttonRegister.classList.remove("d-none");
     buttonDatosCuenta.classList.add("d-none");
-    buttonPedidosCuenta.classList.add("d-none");
+    // buttonPedidosCuenta.classList.add("d-none");
     buttonLogout.classList.add("d-none");
   }
 
@@ -352,12 +353,3 @@ function logout() {
       });
     });
 };
-const user = auth.currentUser;
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User signed in
-    const uid = user.uid;
-  } else {
-    // No user signed in
-  }
-});
