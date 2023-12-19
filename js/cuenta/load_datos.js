@@ -31,7 +31,7 @@ window.addEventListener('load',() => {
                     <p><strong>Empresa</strong></p>
                 </div>
                 <div class="col-6">
-                    <p>${empresa}</p>
+                    <p>${empresa || 'No definido'}</p>
                 </div>
             </div>
             <div class="row">
@@ -39,7 +39,7 @@ window.addEventListener('load',() => {
                     <p><strong>CUIT</strong></p>
                 </div>
                 <div class="col-6">
-                    <p>${cuit}</p>
+                    <p>${cuit || 'No definido'}</p>
                 </div>
             </div>
             `
