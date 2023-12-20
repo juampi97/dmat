@@ -28,7 +28,7 @@ const login = () => {
       setCookie("uid", credentials.user.uid, 5);
       setTimeout(() => {
         window.location.assign("./index.html");
-      }, 500);
+      }, 2000);
     })
     .catch(function (error) {
       let error_code = error.code;
