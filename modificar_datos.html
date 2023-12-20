@@ -22,6 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Scripts -->
     <script src="./js/components.js" type="module"></script>
+    <script src="./js/firebase/auth/update_datos.js" type="module"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -29,14 +30,14 @@
   <body>
     <div id="nav"></div>
     <main
-      class="container-fluid main-register mt-md-0  px-0 d-flex align-items-center justify-content-around"
+      class="container-fluid main-register px-0 d-flex align-items-center justify-content-around" style="min-height: 85vh;"
     >
       <div
         class="col-10 col-md-5 col-lg-3 main-register-div d-flex align-items-center justify-content-around"
       >
         <!-- Pills content -->
         <div class="tab-content col-12">
-          <div class="form-floating mb-3">
+          <!-- <div class="form-floating mb-3">
             <input
               type="email"
               class="form-control"
@@ -44,25 +45,7 @@
               placeholder="name@example.com"
             />
             <label for="floatingInput">*Email</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">*Password</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="password"
-              class="form-control"
-              id="confirmPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">*Confirm password</label>
-          </div>
+          </div> -->
           <div class="form-floating mb-3">
             <input
               type="text"
@@ -70,7 +53,7 @@
               id="nombre"
               placeholder="Nombre"
             />
-            <label for="Nombre">*Nombre</label>
+            <label for="Nombre">Nombre</label>
           </div>
           <div class="form-floating mb-3">
             <input
@@ -79,7 +62,7 @@
               id="apellido"
               placeholder="Apellido"
             />
-            <label for="Apellido">*Apellido</label>
+            <label for="Apellido">Apellido</label>
           </div>
           <div class="form-floating mb-3">
             <input
@@ -100,23 +83,22 @@
             <label for="Cuit">CUIT</label>
           </div>
           <div>
-            <p class="text-secondary">* Campos obligatorios. </p>
+            <p class="text-secondary">Complete los campos que desee modificar. </p>
           </div>
           <!-- 2 column grid layout -->
           <div class="d-flex justify-content-center">
             <!-- Submit button -->
-            <button type="submit" style="width: 35%;" class="btn btn-primary btn-block mb-4 me-2" id="">
+            <button style="width: 35%;" class="btn btn-azul btn-block mb-4 me-2" id="">
               <a class="text-white" href="./datos_cuenta.html">Volver</a>
             </button>
-            <button type="submit" style="width: 35%;" class="text-center btn btn-primary btn-block mb-4 ms-2" id="buttonRegister">
-              Registrarse
+            <button style="width: 35%;" id="btnModificar" class="text-center btn btn-azul btn-block mb-4 ms-2" id="buttonRegister">
+              Modificar
             </button>
           </div>
         </div>
       </div>
     </main>
   </body>
-  <script src="./js/firebase/auth/register.js" type="module"></script>
   <!-- Footer -->
   <div id="pie"></div>
 </html>

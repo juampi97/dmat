@@ -4,6 +4,7 @@ window.addEventListener('load',() => {
     const datos = document.querySelector("#datos");
 
     let nombre = getCookie('nombre')
+    let apellido = getCookie('apellido')
     let email = getCookie('email')
     let empresa = getCookie('empresa')
     let cuit = getCookie('cuit')
@@ -15,7 +16,7 @@ window.addEventListener('load',() => {
                     <p><strong>Nombre</strong></p>
                 </div>
                 <div class="col-6">
-                    <p>${nombre}</p>
+                    <p>${nombre + ' ' + apellido}</p>
                 </div>
             </div>
             <div class="row">
@@ -48,7 +49,7 @@ window.addEventListener('load',() => {
             <div class="row">
                 <div class="flex-row">
                     <p><strong>Nombre</strong></p>
-                    <p>${nombre}</p>
+                    <p>${nombre + ' ' + apellido}</p>
                 </div>
             </div>
             <div class="row">

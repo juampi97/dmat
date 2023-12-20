@@ -337,6 +337,7 @@ function logout() {
     .then((credentials) => {
       // Limpio cookies
       deleteCookie("nombre");
+      deleteCookie("apellido");
       deleteCookie("email");
       deleteCookie("empresa");
       deleteCookie("cuit");
