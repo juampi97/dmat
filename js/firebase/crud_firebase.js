@@ -9,6 +9,12 @@ import {
   push,
   update,
 } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+import {
+  getAuth,
+  updateProfile,
+  updatePassword,
+  sendPasswordResetEmail
+} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
 import { getCookie, uuidv4 } from "../functions.js";
 
 const db = getDatabase();
@@ -25,9 +31,9 @@ export const getDataFromDatabase = (dbName) => {
 };
 
 export const nuevaCotizacion = () => {
-  const uidPedido = uuidv4()
+  const uidPedido = uuidv4();
   let carrito = JSON.parse(localStorage.getItem("carrito"));
-  
+
   let postData = {
     uid: uidPedido,
     productos: carrito,
@@ -35,7 +41,7 @@ export const nuevaCotizacion = () => {
   set(ref(db, "pedidos/" + postData.uid), postData)
     .then(() => {
       // console.log(carrito);
-      updatePedidosUsuarios(uidPedido,carrito)
+      updatePedidosUsuarios(uidPedido, carrito);
     })
     .catch((error) => {
       // The write failed...
@@ -45,7 +51,7 @@ export const nuevaCotizacion = () => {
 
 export const updatePedidosUsuarios = (uidPedido, carrito) => {
   const uidCookie = getCookie("uid");
-  
+
   const dbRef = ref(db);
   get(child(dbRef, `users/${uidCookie}`))
     .then((snapshot) => {
@@ -64,17 +70,16 @@ export const updatePedidosUsuarios = (uidPedido, carrito) => {
           apellido: user.apellido,
           cuit: user.cuit,
           empresa: user.empresa,
-          pedidos: user.pedidos
+          pedidos: user.pedidos,
         })
           .then(() => {
             // Data saved successfully!
             set(ref(db, `pedidos/${uidPedido}`), {
               uid: uidPedido,
-              items: carrito
-            })
-              .then(() => {
-                console.log(true);
-              })
+              items: carrito,
+            }).then(() => {
+              console.log(true);
+            });
           })
           .catch((error) => {
             console.log(error);
