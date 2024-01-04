@@ -2,6 +2,7 @@ window.addEventListener("load", function (event) {
   const listadoCarrito = document.querySelector("#carrito_section");
 
   let carrito = init_load_Carrito()
+  console.log(carrito)
 
   if (carrito.length == 0) {
     listadoCarrito.innerHTML = carritoVacio;

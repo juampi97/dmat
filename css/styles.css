@@ -9839,6 +9839,39 @@ a {
     .drop-items:hover {
       color: white; } }
 
+.wrapper {
+  height: 38px;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+  .wrapper button {
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    width: 20%;
+    height: 70%;
+    margin: 5%;
+    font-size: 15px;
+    font-weight: 600; }
+  .wrapper span {
+    width: 45%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600; }
+    .wrapper span.num {
+      min-width: 45%;
+      min-width: 45%;
+      font-size: 15px;
+      font-weight: 500;
+      border-right: 2px solid rgba(0, 0, 0, 0.2);
+      border-left: 2px solid rgba(0, 0, 0, 0.2); }
+
 .main-index .carousel-item {
   height: 100vh;
   background-position: center;
