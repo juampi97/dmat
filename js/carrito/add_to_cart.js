@@ -90,7 +90,31 @@ const addtocart = (event, producto) => {
   });
 }
 
-const minus = (event, producto) => {
+const minus25 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 25
+    num.innerHTML = numero
+  }
+}
+
+const plus25 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 25
+    num.innerHTML = numero
+}
+
+const minus100 = (event, producto) => {
   let button = event.target
   let button_container = button.parentElement
   let product_detail = button_container.parentElement
@@ -103,7 +127,7 @@ const minus = (event, producto) => {
   }
 }
 
-const plus = (event, producto) => {
+const plus100 = (event, producto) => {
   let button = event.target
   let button_container = button.parentElement
   let product_detail = button_container.parentElement
@@ -111,5 +135,125 @@ const plus = (event, producto) => {
   const num = product_detail.querySelector('.num')
     numero = parseInt(num.innerHTML)
     numero = numero + 100
+    num.innerHTML = numero
+}
+
+const minus150 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 150
+    num.innerHTML = numero
+  }
+}
+
+const plus150 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 150
+    num.innerHTML = numero
+}
+
+const minus200 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 200
+    num.innerHTML = numero
+  }
+}
+
+const plus200 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 200
+    num.innerHTML = numero
+}
+
+const minus250 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 250
+    num.innerHTML = numero
+  }
+}
+
+const plus250 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 250
+    num.innerHTML = numero
+}
+
+const minus300 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 300
+    num.innerHTML = numero
+  }
+}
+
+const plus300 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 300
+    num.innerHTML = numero
+}
+
+const minus400 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 400
+    num.innerHTML = numero
+  }
+}
+
+const plus400 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 400
     num.innerHTML = numero
 }
