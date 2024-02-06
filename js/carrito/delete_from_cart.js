@@ -14,11 +14,12 @@ window.addEventListener("load", function (event) {
       <li class="list-group-item d-flex justify-content-between align-items-start border border-2 rounded my-3">
       <div class="ms-2 me-auto p-3">
         <div class="fw-bold mb-1">${elemento.producto}</div>
+        <p class="mb-1">Descripcion: ${elemento.descripcion}</p>
         <p class="mb-1">Banda: ${elemento.banda} - Min: ${elemento.min} - Max: ${elemento.max}</p>
         <p class="mb-1">Cantidad: ${elemento.cantidad}</p>
       </div>
       <div class="d-flex m-4 justify-content-center">
-        <button onClick="eliminarItem(event)" type="button" class="btn btn-danger py-1 btnEliminar" id="${elemento.producto},${elemento.banda},${elemento.min},${elemento.max}">x</button>
+        <button onClick="eliminarItem(event)" type="button" class="btn btn-danger py-1 btnEliminar" id="${elemento.producto},${elemento.banda},${elemento.descripcion},${elemento.min},${elemento.max}">x</button>
       </div>
       <span class="badge bg-primary rounded-pill d-none">14</span>
     </li>

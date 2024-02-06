@@ -20,7 +20,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- Scripts -->
-    <script src="./js/components.js"></script>
+    <script src="./js/components.js" type="module"></script>
+    <script src="./js/carrito/add_to_cart.js"></script>
+    <script>
+      let producto = "Abrazaderas - Power Trak";
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -85,6 +89,749 @@
         </div>
       </div>
     </main>
+    <div class="linea-sep-negra mx-4 mx-md-5"></div>
+    <section class="container d-flex justify-content-around">
+      <div
+        class="col-11 col-md-10 p-0 d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center"
+      >
+        <div class="col-12 col-md-10 col-lg-6">
+          <div class="row d-flex align-content-center mt-4">
+            <table class="table table-striped table-hover text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Ø Min</th>
+                  <th scope="col">Ø Max</th>
+                  <th scope="col">Cant.</th>
+                  <th scope="col">Agregar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="item-box">
+                  <td class="min" scope="col">9.4mm</td>
+                  <td class="max" scope="col">11.3mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">11.4mm</td>
+                  <td class="max" scope="col">13.3mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">12.6mm</td>
+                  <td class="max" scope="col">14.5mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">12.9mm</td>
+                  <td class="max" scope="col">14.8mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">13.8mm</td>
+                  <td class="max" scope="col">15.7mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">15.1mm</td>
+                  <td class="max" scope="col">17mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">17mm</td>
+                  <td class="max" scope="col">19.8mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">21.4mm</td>
+                  <td class="max" scope="col">24mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">22.5mm</td>
+                  <td class="max" scope="col">26mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">24.5mm</td>
+                  <td class="max" scope="col">28mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">26.5mm</td>
+                  <td class="max" scope="col">30mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">26.7mm</td>
+                  <td class="max" scope="col">31.5mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">28.5mm</td>
+                  <td class="max" scope="col">32.8mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">33mm</td>
+                  <td class="max" scope="col">36.5mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">37.5mm</td>
+                  <td class="max" scope="col">41mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">42.5mm</td>
+                  <td class="max" scope="col">46mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">45.4mm</td>
+                  <td class="max" scope="col">51.4mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">50mm</td>
+                  <td class="max" scope="col">56mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">61mm</td>
+                  <td class="max" scope="col">67mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">67.5mm</td>
+                  <td class="max" scope="col">71mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">75mm</td>
+                  <td class="max" scope="col">78.5mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">79.5mm</td>
+                  <td class="max" scope="col">83mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">82.8mm</td>
+                  <td class="max" scope="col">86mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">83.5mm</td>
+                  <td class="max" scope="col">87.5mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">89mm</td>
+                  <td class="max" scope="col">92.5mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">94mm</td>
+                  <td class="max" scope="col">100mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">104mm</td>
+                  <td class="max" scope="col">110mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">111.5mm</td>
+                  <td class="max" scope="col">115mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">121.4mm</td>
+                  <td class="max" scope="col">125mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="min" scope="col">138mm</td>
+                  <td class="max" scope="col">142mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="linea-sep-negra mx-4 mx-md-5"></div>
     <section class="container-fluid d-flex flex-row justify-content-around p-0">
       <div class="d-flex flex-column p-0 col-11 ficha_container">

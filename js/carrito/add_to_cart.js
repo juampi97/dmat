@@ -51,6 +51,7 @@ const addtocart = (event, producto) => {
   let banda
   let min
   let max
+  let descripcion
   let cantidad_list
   let cantidad
 
@@ -58,6 +59,11 @@ const addtocart = (event, producto) => {
     banda=product_detail.querySelector('.banda').innerHTML
   } else {
     banda = ""
+  }
+  if(product_detail.querySelector('.descripcion')){ 
+    descripcion=product_detail.querySelector('.descripcion').innerHTML
+  } else {
+    descripcion = ""
   }
   if(product_detail.querySelector('.min')){
     min = product_detail.querySelector('.min').innerHTML
@@ -77,6 +83,7 @@ const addtocart = (event, producto) => {
   let item = {
     'producto': producto,
     'banda': banda,
+    'descripcion':descripcion,
     'min': min,
     'max': max,
     'cantidad': cantidad
@@ -88,6 +95,54 @@ const addtocart = (event, producto) => {
     text: "Producto agregado correctamente.",
     icon: "success"
   });
+}
+
+const minus1 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 1
+    num.innerHTML = numero
+  }
+}
+
+const plus1 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 1
+    num.innerHTML = numero
+}
+
+const minus10 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 10
+    num.innerHTML = numero
+  }
+}
+
+const plus10 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 10
+    num.innerHTML = numero
 }
 
 const minus25 = (event, producto) => {
@@ -111,6 +166,30 @@ const plus25 = (event, producto) => {
   const num = product_detail.querySelector('.num')
     numero = parseInt(num.innerHTML)
     numero = numero + 25
+    num.innerHTML = numero
+}
+
+const minus50 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+  
+  const num = product_detail.querySelector('.num')
+  if(num.innerHTML != "0") {
+    numero = parseInt(num.innerHTML)
+    numero = numero - 50
+    num.innerHTML = numero
+  }
+}
+
+const plus50 = (event, producto) => {
+  let button = event.target
+  let button_container = button.parentElement
+  let product_detail = button_container.parentElement
+
+  const num = product_detail.querySelector('.num')
+    numero = parseInt(num.innerHTML)
+    numero = numero + 50
     num.innerHTML = numero
 }
 
