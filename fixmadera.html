@@ -21,6 +21,10 @@
     ></script>
     <!-- Scripts -->
     <script src="./js/components.js" type="module"></script>
+    <script src="./js/carrito/add_to_cart.js"></script>
+    <script>
+      let producto = "Tornillo - Fix Madera";
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -94,6 +98,557 @@
         </div>
       </div>
     </main>
+    <div class="linea-sep-negra mx-4 mx-md-5"></div>
+    <section class="container d-flex justify-content-around">
+      <div
+        class="col-11 col-md-10 p-0 d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center"
+      >
+        <div class="col-12 col-md-10 col-lg-6">
+          <div class="row d-flex align-content-center mt-4">
+            <table class="table table-striped table-hover text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Cod.</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Cant.</th>
+                  <th scope="col">Agregar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0706</td>
+                  <td class="descripcion" scope="col">12 X 1″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0708</td>
+                  <td class="descripcion" scope="col">12 X 1″1/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0709</td>
+                  <td class="descripcion" scope="col">12 X 1″1/2 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0711</td>
+                  <td class="descripcion" scope="col">12 X 1″3/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus200(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus200(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0712</td>
+                  <td class="descripcion" scope="col">12 X 2″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus200(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus200(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0805</td>
+                  <td class="descripcion" scope="col">10X 3/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0806</td>
+                  <td class="descripcion" scope="col">10 X 1″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0808</td>
+                  <td class="descripcion" scope="col">10 X 1″1/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0809</td>
+                  <td class="descripcion" scope="col">10 X 1″1/2 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0811</td>
+                  <td class="descripcion" scope="col">10 X 1″3/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0812</td>
+                  <td class="descripcion" scope="col">10 X 2″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0905</td>
+                  <td class="descripcion" scope="col">8 X 3/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0906</td>
+                  <td class="descripcion" scope="col">8 X 1″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0908</td>
+                  <td class="descripcion" scope="col">8 X 1″1/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0909</td>
+                  <td class="descripcion" scope="col">8 X 1″1/2 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0911</td>
+                  <td class="descripcion" scope="col">8 X 1″3/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T0912</td>
+                  <td class="descripcion" scope="col">8 X 2″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T1006</td>
+                  <td class="descripcion" scope="col">6 X 1″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T1008</td>
+                  <td class="descripcion" scope="col">6 X 1″1/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T1009</td>
+                  <td class="descripcion" scope="col">6 X 1″1/2 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T1011</td>
+                  <td class="descripcion" scope="col">6 X 1″3/4 Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus500(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus500(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">T1012</td>
+                  <td class="descripcion" scope="col">6 X 2″ Madera</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus300(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus300(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="linea-sep-negra mx-4 mx-md-5"></div>
     <section class="container-fluid d-flex flex-row justify-content-around p-0">
       <div class="d-flex flex-column p-0 col-11 ficha_container">
