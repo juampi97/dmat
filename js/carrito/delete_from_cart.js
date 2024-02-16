@@ -15,6 +15,8 @@ window.addEventListener("load", function (event) {
       <div class="ms-2 me-auto p-3">
         <div class="fw-bold mb-1">${elemento.producto}</div>
         <p class="mb-1">Código: ${elemento.codigo} - Descripcion: ${elemento.descripcion}</p>
+        <p class="mb-1">Código: ${elemento.codigo} - Dimension: ${elemento.dimension} - Largo: ${elemento.largo} - Ancho: ${elemento.ancho}</p>
+        <p class="mb-1">Dimension: ${elemento.dimension}
         <p class="mb-1">Banda: ${elemento.banda} - Min: ${elemento.min} - Max: ${elemento.max}</p>
         <p class="mb-1">Cantidad: ${elemento.cantidad}</p>
       </div>

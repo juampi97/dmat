@@ -24,6 +24,7 @@ const updateCart = (item) => {
 
   carrito.forEach((element) => {
     if (
+      element.dimension == item.dimension &&
       element.codigo == item.codigo &&
       element.descripcion == item.descripcion &&
       element.banda == item.banda &&
@@ -58,6 +59,9 @@ const addtocart = (event, producto) => {
   let min;
   let max;
   let codigo;
+  let dimension;
+  let ancho;
+  let largo;
   let descripcion;
   let cantidad_list;
   let cantidad;
@@ -67,10 +71,25 @@ const addtocart = (event, producto) => {
   } else {
     banda = "";
   }
+  if (product_detail.querySelector(".dimension")) {
+    dimension = product_detail.querySelector(".dimension").innerHTML;
+  } else {
+    dimension = "";
+  }
   if (product_detail.querySelector(".codigo")) {
     codigo = product_detail.querySelector(".codigo").innerHTML;
   } else {
     codigo = "";
+  }
+  if (product_detail.querySelector(".ancho")) {
+    ancho = product_detail.querySelector(".ancho").innerHTML;
+  } else {
+    ancho = "";
+  }
+  if (product_detail.querySelector(".largo")) {
+    largo = product_detail.querySelector(".largo").innerHTML;
+  } else {
+    largo = "";
   }
   if (product_detail.querySelector(".descripcion")) {
     descripcion = product_detail.querySelector(".descripcion").innerHTML;
@@ -96,7 +115,10 @@ const addtocart = (event, producto) => {
     producto: producto,
     banda: banda,
     codigo: codigo,
+    dimension: dimension,
     descripcion: descripcion,
+    ancho: ancho,
+    largo: largo,
     min: min,
     max: max,
     cantidad: cantidad,

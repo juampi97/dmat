@@ -21,6 +21,10 @@
     ></script>
     <!-- Scripts -->
     <script src="./js/components.js" type="module"></script>
+    <script src="./js/carrito/add_to_cart.js"></script>
+    <script>
+      let producto = "Cable Clamps - Abrazaderas Plásticas";
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -76,6 +80,7 @@
         </div>
       </div>
     </main>
+
     <div class="linea-sep-negra mx-4 mx-md-5"></div>
     <section class="container-fluid d-flex flex-column align-items-center">
       <div class="col-11 col-md-10 col-lg-8 py-4 text-center text-md-start">
@@ -89,6 +94,230 @@
       </div>
     </section>
     <div class="linea-sep-azul mx-4 mx-md-5"></div>
+    <section class="container d-flex justify-content-around">
+      <div
+        class="col-11 col-md-10 p-0 d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center"
+      >
+        <div class="col-12 col-md-10 col-lg-6">
+          <div class="row d-flex align-content-center mt-4">
+            <table class="table table-striped table-hover text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Cod.</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Medidas</th>
+                  <th scope="col">Cant.</th>
+                  <th scope="col">Agregar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 01</td>
+                  <td class="descripcion" scope="col">UC - 0.5</td>
+                  <td class="dimension" scope="col">4.8 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 02</td>
+                  <td class="descripcion" scope="col">UC - 1</td>
+                  <td class="dimension" scope="col">6.35 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 03</td>
+                  <td class="descripcion" scope="col">UC - 1.5</td>
+                  <td class="dimension" scope="col">7.9 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 04</td>
+                  <td class="descripcion" scope="col">UC - 2</td>
+                  <td class="dimension" scope="col">9.5 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 05</td>
+                  <td class="descripcion" scope="col">UC - 3</td>
+                  <td class="dimension" scope="col">12.7 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 06</td>
+                  <td class="descripcion" scope="col">UC - 4</td>
+                  <td class="dimension" scope="col">15.8 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 07</td>
+                  <td class="descripcion" scope="col">UC - 5</td>
+                  <td class="dimension" scope="col">19.4 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="codigo" scope="col">K 08</td>
+                  <td class="descripcion" scope="col">UC - 6</td>
+                  <td class="dimension" scope="col">25.4 mm</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="linea-sep-negra mx-4 mx-md-5"></div>
     <section class="container-fluid d-flex flex-row justify-content-around p-0">
       <div class="d-flex flex-column p-0 col-11 ficha_container">
         <div class="col-12 mt-3 ficha_container_title">
