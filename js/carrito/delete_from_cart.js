@@ -10,14 +10,40 @@ window.addEventListener("load", function (event) {
     //Cargo todos los items del carrito
     listadoCarrito.innerHTML = "";
     for (const elemento of carrito) {
+      let detalle = "";
+
+      if(elemento.codigo){
+        detalle += ` - Codigo: ${elemento.codigo}`
+      }
+      if(elemento.descripcion){
+        detalle += ` - Descripcion: ${elemento.descripcion}`
+      }
+      if(elemento.dimension){
+        detalle += ` - Dimension: ${elemento.dimension}`
+      }
+      if(elemento.largo){
+        detalle += ` - Largo: ${elemento.largo}`
+      }
+      if(elemento.ancho){
+        detalle += ` - Ancho: ${elemento.ancho}`
+      }
+      if(elemento.banda){
+        detalle += ` - Banda: ${elemento.banda}`
+      }
+      if(elemento.min){
+        detalle += ` - Min: ${elemento.min}`
+      }
+      if(elemento.max){
+        detalle += ` - Max: ${elemento.max}`
+      }
+      
+      detalle = detalle.slice(3)
+      
       listadoCarrito.innerHTML += `
       <li class="list-group-item d-flex justify-content-between align-items-start border border-2 rounded my-3">
       <div class="ms-2 me-auto p-3">
         <div class="fw-bold mb-1">${elemento.producto}</div>
-        <p class="mb-1">Código: ${elemento.codigo} - Descripcion: ${elemento.descripcion}</p>
-        <p class="mb-1">Código: ${elemento.codigo} - Dimension: ${elemento.dimension} - Largo: ${elemento.largo} - Ancho: ${elemento.ancho}</p>
-        <p class="mb-1">Dimension: ${elemento.dimension}
-        <p class="mb-1">Banda: ${elemento.banda} - Min: ${elemento.min} - Max: ${elemento.max}</p>
+        <p class="mb-1">${detalle}</p>
         <p class="mb-1">Cantidad: ${elemento.cantidad}</p>
       </div>
       <div class="d-flex m-4 justify-content-center">
