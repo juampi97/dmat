@@ -21,6 +21,10 @@
     ></script>
     <!-- Scripts -->
     <script src="./js/components.js" type="module"></script>
+    <script src="./js/carrito/add_to_cart.js"></script>
+    <script>
+      let producto = "Abrazadera - Power Trak - Peugeot";
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>DMAT</title>
@@ -88,6 +92,830 @@
         </div>
       </div>
     </main>
+    <div class="linea-sep-negra mx-4 mx-md-5"></div>
+    <section class="container d-flex justify-content-around">
+      <div
+        class="col-11 col-md-11 p-0 d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center"
+      >
+        <div class="col-12 col-md-12 col-lg-10">
+          <div class="row d-flex align-content-center mt-4">
+            <table class="table table-striped table-hover text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Nominal</th>
+                  <th scope="col">Modelo</th>
+                  <th scope="col">Aplicacion</th>
+                  <th scope="col">Cant.</th>
+                  <th scope="col">Agregar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">11.3</td>
+                  <td class="modelo" scope="col">Todos</td>
+                  <td class="aplicacion" scope="col">Inyección y líneas de combustible convencional</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">13.3</td>
+                  <td class="modelo" scope="col">Todos</td>
+                  <td class="aplicacion" scope="col">Inyección y líneas de combustible convencional</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">14.5</td>
+                  <td class="modelo" scope="col">Todos</td>
+                  <td class="aplicacion" scope="col">Inyección y líneas de combustible convencional</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">14.8</td>
+                  <td class="modelo" scope="col">Todos</td>
+                  <td class="aplicacion" scope="col">Inyección y líneas de combustible convencional</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">15.7</td>
+                  <td class="modelo" scope="col">Todos</td>
+                  <td class="aplicacion" scope="col">Inyección y líneas de combustible convencional</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">17</td>
+                  <td class="modelo" scope="col">Todos</td>
+                  <td class="aplicacion" scope="col">Inyección y líneas de combustible convencional</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">21</td>
+                  <td class="modelo" scope="col">Boxer</td>
+                  <td class="aplicacion" scope="col">Dirección mecánica e hidráulica ambos lados</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">31.5</td>
+                  <td class="modelo" scope="col">205</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja con chapa</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">31.5</td>
+                  <td class="modelo" scope="col">806 / 405 / 306 / 106 / 205</td>
+                  <td class="aplicacion" scope="col">Homocinética lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">31.5</td>
+                  <td class="modelo" scope="col">405 / 806 / 306</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">32.8</td>
+                  <td class="modelo" scope="col">306 / 405 < 1996</td>
+                  <td class="aplicacion" scope="col">Homocinética lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">36.5</td>
+                  <td class="modelo" scope="col">Boxer</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja y lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">41</td>
+                  <td class="modelo" scope="col">Boxer</td>
+                  <td class="aplicacion" scope="col">Dirección mecánica e hidráulica lado izquierdo</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">46</td>
+                  <td class="modelo" scope="col">505 / 405</td>
+                  <td class="aplicacion" scope="col">Caja dirección hidráulica</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">50.4</td>
+                  <td class="modelo" scope="col">Boxer</td>
+                  <td class="aplicacion" scope="col">Dirección mecánica e hidráulica lado derecho</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">52</td>
+                  <td class="modelo" scope="col">404 / 504</td>
+                  <td class="aplicacion" scope="col">Fuelle amortiguador lado inferior</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">71</td>
+                  <td class="modelo" scope="col">205</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">78.5</td>
+                  <td class="modelo" scope="col">106 / 205</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja con chapa</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">78.5</td>
+                  <td class="modelo" scope="col">205</td>
+                  <td class="aplicacion" scope="col">Homocinética lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">87.5</td>
+                  <td class="modelo" scope="col">806 / 405 < 1995</td>
+                  <td class="aplicacion" scope="col">Homocinética lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">92,5</td>
+                  <td class="modelo" scope="col">306 / 405 < 1996</td>
+                  <td class="aplicacion" scope="col">Homocinética lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">100</td>
+                  <td class="modelo" scope="col">Boxer</td>
+                  <td class="aplicacion" scope="col">Homocinética lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">105</td>
+                  <td class="modelo" scope="col">Boxer</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">125</td>
+                  <td class="modelo" scope="col">Boxer Max</td>
+                  <td class="aplicacion" scope="col">Homocinética lado caja </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">56</td>
+                  <td class="modelo" scope="col">Uno <94 / Duna < 94 / Siena/ Palio </td>
+                  <td class="aplicacion" scope="col">Fuelle homocinética lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">78.5</td>
+                  <td class="modelo" scope="col">Uno <94 / Duna < 94 / Siena/ Palio	</td>
+                  <td class="aplicacion" scope="col">Fuelle lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">78.5</td>
+                  <td class="modelo" scope="col">Uno <94 / Duna < 94 / Siena </td>
+                  <td class="aplicacion" scope="col">Fuelle lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">83</td>
+                  <td class="modelo" scope="col">600  (todos)</td>
+                  <td class="aplicacion" scope="col">Fuelle lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">87.5</td>
+                  <td class="modelo" scope="col">Ducato</td>
+                  <td class="aplicacion" scope="col">Fuelle lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">92.5</td>
+                  <td class="modelo" scope="col">Ducato / Siena / Palio</td>
+                  <td class="aplicacion" scope="col">Fuelle lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">95.2</td>
+                  <td class="modelo" scope="col">Uno <94 / Duna < 94 	</td>
+                  <td class="aplicacion" scope="col">Fuelle lado rueda</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+                <tr class="item-box">
+                  <td class="dimension" scope="col">125</td>
+                  <td class="modelo" scope="col">Ducato Max</td>
+                  <td class="aplicacion" scope="col">Fuelle lado caja</td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <div class="wrapper">
+                      <button onclick="minus100(event, producto)" class="minus">
+                        -
+                      </button>
+                      <span class="num">0</span>
+                      <button onclick="plus100(event, producto)" class="plus">
+                        +
+                      </button>
+                    </div>
+                  </td>
+                  <td scope="col" class="col-3 col-lg-2">
+                    <button
+                      onclick="addtocart(event, producto)"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      +
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="linea-sep-negra mx-4 mx-md-5"></div>
     <section class="container-fluid d-flex flex-row justify-content-around p-0">
       <div class="d-flex flex-column p-0 col-11 ficha_container">
@@ -212,7 +1040,7 @@
                   <td>Homocinética lado rueda</td>
               </tr>
               <tr>
-                  <td>92,595,2</td>
+                  <td>92,5</td>
                   <td>306 / 405 &lt; 1996 </td>
                   <td>Homocinética lado rueda</td>
               </tr>

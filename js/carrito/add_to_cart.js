@@ -55,14 +55,16 @@ const addtocart = (event, producto) => {
   let button_container = button.parentElement;
   let product_detail = button_container.parentElement;
 
+  let codigo;
+  let descripcion;
+  let dimension;
+  let modelo;
+  let aplicacion;
+  let ancho;
+  let largo;
   let banda;
   let min;
   let max;
-  let codigo;
-  let dimension;
-  let ancho;
-  let largo;
-  let descripcion;
   let cantidad_list;
   let cantidad;
 
@@ -75,6 +77,16 @@ const addtocart = (event, producto) => {
     dimension = product_detail.querySelector(".dimension").innerHTML;
   } else {
     dimension = "";
+  }
+  if (product_detail.querySelector(".modelo")) {
+    modelo = product_detail.querySelector(".modelo").innerHTML;
+  } else {
+    modelo = "";
+  }
+  if (product_detail.querySelector(".aplicacion")) {
+    aplicacion = product_detail.querySelector(".aplicacion").innerHTML;
+  } else {
+    aplicacion = "";
   }
   if (product_detail.querySelector(".codigo")) {
     codigo = product_detail.querySelector(".codigo").innerHTML;
@@ -116,6 +128,8 @@ const addtocart = (event, producto) => {
     banda: banda,
     codigo: codigo,
     dimension: dimension,
+    modelo: modelo,
+    aplicacion: aplicacion,
     descripcion: descripcion,
     ancho: ancho,
     largo: largo,

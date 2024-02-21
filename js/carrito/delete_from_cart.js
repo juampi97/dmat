@@ -21,6 +21,12 @@ window.addEventListener("load", function (event) {
       if(elemento.dimension){
         detalle += ` - Dimension: ${elemento.dimension}`
       }
+      if(elemento.dimension){
+        detalle += ` - Modelo: ${elemento.modelo}`
+      }
+      if(elemento.dimension){
+        detalle += ` - Aplicacion: ${elemento.aplicacion}`
+      }
       if(elemento.largo){
         detalle += ` - Largo: ${elemento.largo}`
       }
